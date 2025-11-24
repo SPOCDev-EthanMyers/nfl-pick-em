@@ -302,11 +302,135 @@
     padding: 15px;
   }
 
+  .admin-section {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .admin-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group button,
+  .admin-controls button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .add-player-form {
+    flex-direction: column;
+  }
+
+  .add-player-form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .player-item {
+    padding: 10px 12px;
+  }
+
+  .player-item span {
+    font-size: 1rem;
+  }
+
+  .spreads-section {
+    max-height: 500px;
+  }
+
+  .spreads-instructions {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .game-matchup {
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
   .spread-controls {
     flex-direction: column;
   }
 
   .spread-controls button {
     width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-panel {
+    margin: 8px;
+    padding: 12px;
+    border-width: 2px;
+  }
+
+  .admin-section {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .admin-section h3 {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .input-group input,
+  .add-player-form input,
+  .spread-controls input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .input-group button,
+  .admin-controls button,
+  .add-player-form button,
+  .spread-controls button {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .player-item {
+    padding: 8px 10px;
+  }
+
+  .player-item span {
+    font-size: 0.95rem;
+  }
+
+  .delete-btn {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+  }
+
+  .spreads-section {
+    max-height: 400px;
+  }
+
+  .spreads-instructions {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .spread-item {
+    padding: 12px;
+  }
+
+  .game-matchup {
+    font-size: 0.95rem;
+    gap: 8px;
+  }
+
+  .game-matchup .team {
+    padding: 4px 8px;
+    font-size: 0.9rem;
+  }
+
+  .current-spread {
+    font-size: 0.85rem;
   }
 }
