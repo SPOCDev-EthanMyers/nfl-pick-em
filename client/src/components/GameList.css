@@ -20,11 +20,12 @@
 
 .games-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 15px;
   padding: 20px;
   background: rgba(42, 42, 62, 0.3);
   border-radius: 0 0 10px 10px;
+  overflow-x: auto;
 }
 
 .game-wrapper {
@@ -34,34 +35,45 @@
   border-radius: 8px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  padding: 15px;
-  gap: 5px;
+  padding: 10px;
+  gap: 3px;
+  min-width: 140px;
+  flex-shrink: 0;
 }
 
 .game-wrapper:hover {
   border-color: #00ff88;
-  transform: translateX(5px);
+  transform: translateY(-5px);
 }
 
 .game-card {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
 }
 
 .team-block {
   flex: 1;
-  padding: 15px;
   border-radius: 6px;
   border: 2px solid;
   text-align: center;
   position: relative;
   transition: all 0.3s ease;
-  min-height: 80px;
+  min-height: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  align-items: center;
+  gap: 3px;
+}
+
+.team-info-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 .team-block.favored {
@@ -77,7 +89,7 @@
 
 .team-abbr {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -85,72 +97,54 @@
 }
 
 .team-record {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 600;
 }
 
 .team-score {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #ffd700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 .spread-display {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  padding: 0 10px;
+  justify-content: center;
+  padding: 5px;
   position: relative;
-}
-
-.spread-display.game-complete {
-  border: 2px solid #00ff88;
-  border-radius: 5px;
-  padding: 8px 12px;
-  background: rgba(0, 255, 136, 0.05);
-}
-
-.spread-display.push {
-  border-color: #ffa500 !important;
-  background: rgba(255, 165, 0, 0.05) !important;
-}
-
-.checkmark-tab {
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  background: #00ff88;
-  color: #1a1a2e;
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 2px 4px;
-  border-radius: 0 3px 0 3px;
-  line-height: 1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.at-symbol {
-  font-family: 'Russo One', sans-serif;
-  font-size: 1.2rem;
-  color: #888;
+  min-height: 35px;
 }
 
 .spread-value {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #00ff88;
   background: rgba(0, 255, 136, 0.1);
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 1px solid #00ff88;
-  min-width: 50px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 2px solid #00ff88;
+  min-width: 45px;
   text-align: center;
+  position: relative;
+}
+
+.spread-value.game-complete {
+  border-color: #00ff88;
+  background: rgba(0, 255, 136, 0.15);
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.spread-value.push {
+  border-color: #ffa500 !important;
+  background: rgba(255, 165, 0, 0.15) !important;
+  color: #ffa500;
 }
 
 .spread-value.no-spread {
@@ -159,24 +153,140 @@
   background: rgba(255, 165, 0, 0.1);
 }
 
+.checkmark-tab {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background: #00ff88;
+  color: #1a1a2e;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 3px;
+  border-radius: 0 2px 0 2px;
+  line-height: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .game-info {
   width: 100%;
   text-align: center;
+  margin-top: 5px;
 }
 
 .game-status {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 600;
 }
 
 @media (max-width: 768px) {
-  .team-abbr {
-    font-size: 1.1rem;
+  .game-list-header {
+    padding: 15px;
+  }
+
+  .game-list-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .games-container {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .game-wrapper {
+    min-width: 120px;
+    padding: 8px;
   }
 
   .team-block {
+    padding: 6px;
+    min-height: 45px;
+  }
+
+  .team-abbr {
+    font-size: 1rem;
+  }
+
+  .team-score {
+    font-size: 1.2rem;
+  }
+
+  .team-record {
+    font-size: 0.65rem;
+  }
+
+  .spread-value {
+    font-size: 0.9rem;
+    padding: 3px 6px;
+    min-width: 40px;
+  }
+
+  .game-status {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-list-header {
+    padding: 12px;
+  }
+
+  .game-list-header h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .games-container {
     padding: 10px;
-    min-height: 70px;
+    gap: 10px;
+  }
+
+  .game-wrapper {
+    min-width: 110px;
+    padding: 6px;
+    gap: 2px;
+  }
+
+  .team-block {
+    padding: 5px;
+    min-height: 40px;
+    gap: 2px;
+  }
+
+  .team-info-row {
+    gap: 4px;
+  }
+
+  .team-abbr {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+
+  .team-score {
+    font-size: 1.1rem;
+  }
+
+  .team-record {
+    font-size: 0.6rem;
+  }
+
+  .spread-display {
+    padding: 3px;
+    min-height: 30px;
+  }
+
+  .spread-value {
+    font-size: 0.85rem;
+    padding: 2px 5px;
+    min-width: 35px;
+  }
+
+  .checkmark-tab {
+    font-size: 0.6rem;
+    padding: 1px 2px;
+  }
+
+  .game-status {
+    font-size: 0.55rem;
   }
 }

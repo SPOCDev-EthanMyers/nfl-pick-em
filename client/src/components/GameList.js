@@ -92,16 +92,17 @@ function GameList({ games, spreads }) {
                     borderColor: `#${game.awayTeam.alternateColor}`
                   }}
                 >
-                  <div className="team-abbr">{game.awayTeam.abbreviation}</div>
-                  {isGameComplete && (
-                    <div className="team-score">{game.awayTeam.score}</div>
-                  )}
+                  <div className="team-info-row">
+                    <span className="team-abbr">{game.awayTeam.abbreviation}</span>
+                    {isGameComplete && (
+                      <span className="team-score">{game.awayTeam.score}</span>
+                    )}
+                  </div>
                   <div className="team-record">{game.awayTeam.record}</div>
                 </div>
 
                 {/* Spread Display */}
                 <div className={`spread-display`}>
-                  <div className="at-symbol">@</div>
                   {spread && spreadValue > 0 ? (
                     <div className={`spread-value ${isGameComplete ? 'game-complete' : ''} ${isPush ? 'push' : ''}`}>
                       {isGameComplete && (
@@ -126,10 +127,12 @@ function GameList({ games, spreads }) {
                     borderColor: `#${game.homeTeam.alternateColor}`
                   }}
                 >
-                  <div className="team-abbr">{game.homeTeam.abbreviation}</div>
-                  {isGameComplete && (
-                    <div className="team-score">{game.homeTeam.score}</div>
-                  )}
+                  <div className="team-info-row">
+                    <span className="team-abbr">{game.homeTeam.abbreviation}</span>
+                    {isGameComplete && (
+                      <span className="team-score">{game.homeTeam.score}</span>
+                    )}
+                  </div>
                   <div className="team-record">{game.homeTeam.record}</div>
                 </div>
               </div>

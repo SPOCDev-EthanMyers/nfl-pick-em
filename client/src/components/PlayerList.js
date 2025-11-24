@@ -80,28 +80,15 @@ function PlayerList({ games, players, spreads, onSelectionToggle }) {
           </div>
         ) : (
           <div className="players-grid">
-            {/* Column headers - Games */}
-            <div className="grid-header">
-              <div className="player-name-header">Player</div>
-              <div className="games-header">
-                {games.map(game => (
-                  <div key={game.id} className="game-header-cell">
-                    <div className="matchup-mini">
-                      {game.awayTeam.abbreviation} @ {game.homeTeam.abbreviation}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Player rows */}
+            {/* Player columns */}
             {players.map(player => {
               const { wins, picks } = calculatePlayerStats(player);
               const percentage = picks > 0 ? ((wins / picks) * 100).toFixed(0) : 0;
 
               return (
-                <div key={player.name} className="player-row">
-                  <div className="player-name-cell">
+                <div key={player.name} className="player-column">
+                  {/* Player Header */}
+                  <div className="player-header">
                     <div className="player-info">
                       <span className="player-name">{player.name}</span>
                       <div className="player-stats">
@@ -110,46 +97,66 @@ function PlayerList({ games, players, spreads, onSelectionToggle }) {
                       </div>
                     </div>
                   </div>
-                  <div className="player-selections">
+
+                  {/* Player Picks */}
+                  <div className="player-picks">
                     {games.map(game => {
                       const selection = player.selections?.[game.id];
                       const selectedTeam = getSelectedTeam(game, selection);
                       const isGameComplete = game.status === 'Final' || game.status === 'Final/OT';
+                      const spread = spreads[game.id];
 
                       // Check if this pick won
                       let isWinner = false;
                       if (isGameComplete && selection) {
-                        const spread = spreads[game.id];
                         const winner = calculateSpreadWinner(game, spread);
                         isWinner = winner && selection === winner;
                       }
 
+                      // Determine spread display for selected team
+                      let spreadDisplay = null;
+                      if (selectedTeam && spread && spread.spread > 0) {
+                        const isFavored = spread.favoredTeam === selectedTeam.id;
+                        spreadDisplay = isFavored ? `-${spread.spread}` : `+${spread.spread}`;
+                      } else if (selectedTeam && spread && spread.spread === 0) {
+                        spreadDisplay = 'PK';
+                      }
+
                       return (
-                        <div
-                          key={game.id}
-                          className={`selection-cell ${selectedTeam ? 'has-selection' : 'no-selection'} ${isWinner ? 'winner' : ''}`}
-                          onClick={() => onSelectionToggle(player.name, game.id, selection)}
-                          style={
-                            selectedTeam
-                              ? {
-                                  backgroundColor: `#${selectedTeam.color}`,
-                                  borderColor: `#${selectedTeam.alternateColor}`
-                                }
-                              : {}
-                          }
-                        >
-                          {isWinner && (
-                            <div className="win-checkmark">✓</div>
-                          )}
-                          {selectedTeam ? (
-                            <div className="selection-content">
-                              <span className="selected-team">
-                                {selectedTeam.abbreviation}
-                              </span>
-                            </div>
-                          ) : (
-                            <div className="selection-placeholder">-</div>
-                          )}
+                        <div key={game.id} className="pick-row">
+                          <div className="game-label">
+                            {game.awayTeam.abbreviation} @ {game.homeTeam.abbreviation}
+                          </div>
+                          <div
+                            className={`selection-cell ${selectedTeam ? 'has-selection' : 'no-selection'} ${isWinner ? 'winner' : ''}`}
+                            onClick={() => onSelectionToggle(player.name, game.id, selection)}
+                            style={
+                              selectedTeam
+                                ? {
+                                    backgroundColor: `#${selectedTeam.color}`,
+                                    borderColor: `#${selectedTeam.alternateColor}`
+                                  }
+                                : {}
+                            }
+                          >
+                            {isWinner && (
+                              <div className="win-checkmark">✓</div>
+                            )}
+                            {selectedTeam ? (
+                              <div className="selection-content">
+                                <span className="selected-team">
+                                  {selectedTeam.abbreviation}
+                                </span>
+                                {spreadDisplay && (
+                                  <span className="selected-spread">
+                                    {spreadDisplay}
+                                  </span>
+                                )}
+                              </div>
+                            ) : (
+                              <div className="selection-placeholder">-</div>
+                            )}
+                          </div>
                         </div>
                       );
                     })}

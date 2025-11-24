@@ -25,7 +25,6 @@
   font-family: 'Russo One', sans-serif;
   font-size: 2.5rem;
   color: #ffffff;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
   letter-spacing: 3px;
   margin: 0;
   background: linear-gradient(135deg, #00ff88 0%, #00aaff 100%);
@@ -94,8 +93,9 @@
 
 .pick-em-grid {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 /* Loading State */
@@ -181,10 +181,14 @@
 }
 
 @media (max-width: 768px) {
+  .app-header {
+    padding: 15px 20px;
+  }
+
   .header-content {
     flex-direction: column;
+    gap: 15px;
     text-align: center;
-    padding: 20px;
   }
 
   .app-title {
@@ -196,12 +200,18 @@
     padding: 10px 20px;
   }
 
+  .week-label {
+    font-size: 0.8rem;
+  }
+
   .week-number {
     font-size: 2rem;
   }
 
   .admin-toggle {
     width: 100%;
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 
   .main-content {
@@ -211,10 +221,40 @@
 
 @media (max-width: 480px) {
   .app-header {
-    padding: 15px 20px;
+    padding: 10px 15px;
+  }
+
+  .header-content {
+    gap: 10px;
   }
 
   .app-title {
     font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  .week-display {
+    padding: 8px 16px;
+  }
+
+  .week-label {
+    font-size: 0.7rem;
+  }
+
+  .week-number {
+    font-size: 1.5rem;
+  }
+
+  .admin-toggle {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .main-content {
+    padding: 8px;
+  }
+
+  .pick-em-grid {
+    gap: 15px;
   }
 }

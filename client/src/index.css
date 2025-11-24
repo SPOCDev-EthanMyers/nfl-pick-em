@@ -9,8 +9,37 @@ body {
   background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
   color: #ffffff;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: pan-y;
+  overscroll-behavior-y: none;
 }
 
 #root {
   min-height: 100vh;
+}
+
+/* Improve mobile scrolling performance */
+.games-container,
+.players-grid {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Prevent double-tap zoom on mobile */
+button,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+/* Ensure proper touch targets for mobile */
+@media (max-width: 768px) {
+  button,
+  a,
+  .selection-cell {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
