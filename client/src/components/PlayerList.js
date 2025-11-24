@@ -106,11 +106,19 @@ function PlayerList({ games, players, spreads, onSelectionToggle }) {
                       const isGameComplete = game.status === 'Final' || game.status === 'Final/OT';
                       const spread = spreads[game.id];
 
-                      // Check if this pick won
+                      // Check if this pick won, lost, or pushed
                       let isWinner = false;
+                      let isLoser = false;
+                      let isPush = false;
                       if (isGameComplete && selection) {
                         const winner = calculateSpreadWinner(game, spread);
-                        isWinner = winner && selection === winner;
+                        if (!winner) {
+                          isPush = true;
+                        } else if (selection === winner) {
+                          isWinner = true;
+                        } else {
+                          isLoser = true;
+                        }
                       }
 
                       // Determine spread display for selected team
@@ -128,7 +136,7 @@ function PlayerList({ games, players, spreads, onSelectionToggle }) {
                             {game.awayTeam.abbreviation} @ {game.homeTeam.abbreviation}
                           </div>
                           <div
-                            className={`selection-cell ${selectedTeam ? 'has-selection' : 'no-selection'} ${isWinner ? 'winner' : ''}`}
+                            className={`selection-cell ${selectedTeam ? 'has-selection' : 'no-selection'} ${isWinner ? 'winner' : ''} ${isLoser ? 'loser' : ''} ${isPush ? 'push' : ''}`}
                             onClick={() => onSelectionToggle(player.name, game.id, selection)}
                             style={
                               selectedTeam
@@ -141,6 +149,12 @@ function PlayerList({ games, players, spreads, onSelectionToggle }) {
                           >
                             {isWinner && (
                               <div className="win-checkmark">✓</div>
+                            )}
+                            {isLoser && (
+                              <div className="loss-xmark">✗</div>
+                            )}
+                            {isPush && (
+                              <div className="push-mark">-</div>
                             )}
                             {selectedTeam ? (
                               <div className="selection-content">
