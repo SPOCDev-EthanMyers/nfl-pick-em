@@ -1,0 +1,312 @@
+.admin-panel {
+  background: linear-gradient(135deg, #2a2a3e 0%, #1a1a2e 100%);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 3px solid #ffa500;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.admin-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(26, 26, 46, 0.6);
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin-section:last-child {
+  margin-bottom: 0;
+}
+
+.admin-section h3 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.3rem;
+  color: #ffa500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admin-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-group label {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #00ff88;
+}
+
+.input-group button,
+.admin-controls button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6f 100%);
+  border: none;
+  border-radius: 5px;
+  color: #1a1a2e;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.input-group button:hover,
+.admin-controls button:hover {
+  background: linear-gradient(135deg, #00cc6f 0%, #00aa5f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+}
+
+.refresh-btn {
+  align-self: flex-start;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5555 100%) !important;
+}
+
+.refresh-btn:hover {
+  background: linear-gradient(135deg, #ee5555 0%, #dd4444 100%) !important;
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3) !important;
+}
+
+.add-player-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-player-form input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.add-player-form input:focus {
+  outline: none;
+  border-color: #00ff88;
+}
+
+.add-player-form button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6f 100%);
+  border: none;
+  border-radius: 5px;
+  color: #1a1a2e;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.add-player-form button:hover {
+  background: linear-gradient(135deg, #00cc6f 0%, #00aa5f 100%);
+  transform: translateY(-2px);
+}
+
+.players-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.player-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.player-item span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.delete-btn {
+  padding: 5px 12px;
+  background: #ff6b6b;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #ff5252;
+  transform: scale(1.1);
+}
+
+.spreads-section {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.spreads-instructions {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 165, 0, 0.1);
+  padding: 12px;
+  border-radius: 5px;
+  border-left: 3px solid #ffa500;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.spreads-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.spread-item {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-matchup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+}
+
+.game-matchup .team {
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.game-matchup .team.favored {
+  background: rgba(255, 215, 0, 0.2);
+  border: 2px solid gold;
+  color: gold;
+}
+
+.game-matchup .at-symbol {
+  color: #888;
+  font-weight: 700;
+}
+
+.spread-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.spread-controls input {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.spread-controls input:focus {
+  outline: none;
+  border-color: #00ff88;
+}
+
+.spread-controls button {
+  padding: 8px 15px;
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6f 100%);
+  border: none;
+  border-radius: 5px;
+  color: #1a1a2e;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.spread-controls button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #00cc6f 0%, #00aa5f 100%);
+  transform: translateY(-1px);
+}
+
+.spread-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.spread-controls .toggle-btn {
+  background: linear-gradient(135deg, #ffa500 0%, #ff8800 100%);
+}
+
+.spread-controls .toggle-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ff8800 0%, #ff6600 100%);
+}
+
+.current-spread {
+  font-size: 0.9rem;
+  color: #00ff88;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .admin-panel {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .spread-controls {
+    flex-direction: column;
+  }
+
+  .spread-controls button {
+    width: 100%;
+  }
+}

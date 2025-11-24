@@ -1,0 +1,220 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+.app-header {
+  background: linear-gradient(135deg, #2a2a3e 0%, #1a1a2e 100%);
+  padding: 20px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border-bottom: 4px solid #00ff88;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  letter-spacing: 3px;
+  margin: 0;
+  background: linear-gradient(135deg, #00ff88 0%, #00aaff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.week-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5555 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.week-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 2px;
+}
+
+.week-number {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1;
+}
+
+.admin-toggle {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ffa500 0%, #ff8800 100%);
+  border: none;
+  border-radius: 8px;
+  color: #1a1a2e;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
+}
+
+.admin-toggle:hover {
+  background: linear-gradient(135deg, #ff8800 0%, #ff6600 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 165, 0, 0.5);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.pick-em-grid {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.loading-spinner {
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-top: 5px solid #00ff88;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-container p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  color: #00ff88;
+  letter-spacing: 2px;
+}
+
+/* No Games State */
+.no-games {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(42, 42, 62, 0.3);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.no-games p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.no-games button {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6f 100%);
+  border: none;
+  border-radius: 8px;
+  color: #1a1a2e;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.no-games button:hover {
+  background: linear-gradient(135deg, #00cc6f 0%, #00aa5f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .pick-em-grid {
+    flex-direction: column;
+  }
+
+  .app-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .week-display {
+    padding: 10px 20px;
+  }
+
+  .week-number {
+    font-size: 2rem;
+  }
+
+  .admin-toggle {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 15px 20px;
+  }
+
+  .app-title {
+    font-size: 1.2rem;
+  }
+}
