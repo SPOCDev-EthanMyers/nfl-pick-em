@@ -197,6 +197,486 @@
       "favoredTeam": "2"
     }
   },
+  "4": {
+    "401772632": {
+      "spread": 2.5,
+      "favoredTeam": "16"
+    },
+    "401772716": {
+      "spread": 8.5,
+      "favoredTeam": "7"
+    },
+    "401772737": {
+      "spread": 6.5,
+      "favoredTeam": "24"
+    },
+    "401772738": {
+      "spread": 7.5,
+      "favoredTeam": "34"
+    },
+    "401772739": {
+      "spread": 1.5,
+      "favoredTeam": "1"
+    },
+    "401772740": {
+      "spread": 14.5,
+      "favoredTeam": "2"
+    },
+    "401772741": {
+      "spread": 2.5,
+      "favoredTeam": "33"
+    },
+    "401772742": {
+      "spread": 1.5,
+      "favoredTeam": "13"
+    },
+    "401772813": {
+      "spread": 2.5,
+      "favoredTeam": "15"
+    },
+    "401772845": {
+      "spread": 3.5,
+      "favoredTeam": "21"
+    },
+    "401772846": {
+      "spread": 9.5,
+      "favoredTeam": "8"
+    },
+    "401772847": {
+      "spread": 5.5,
+      "favoredTeam": "17"
+    },
+    "401772848": {
+      "spread": 3.5,
+      "favoredTeam": "25"
+    },
+    "401772849": {
+      "spread": 3.5,
+      "favoredTeam": "14"
+    },
+    "401772921": {
+      "spread": 6.5,
+      "favoredTeam": "9"
+    },
+    "401772938": {
+      "spread": 1.5,
+      "favoredTeam": "26"
+    }
+  },
+  "5": {
+    "401772633": {
+      "spread": 3.5,
+      "favoredTeam": "16"
+    },
+    "401772743": {
+      "spread": 2.5,
+      "favoredTeam": "34"
+    },
+    "401772744": {
+      "spread": 1.5,
+      "favoredTeam": "18"
+    },
+    "401772745": {
+      "spread": 3.5,
+      "favoredTeam": "21"
+    },
+    "401772746": {
+      "spread": 3.5,
+      "favoredTeam": "26"
+    },
+    "401772747": {
+      "spread": 7.5,
+      "favoredTeam": "22"
+    },
+    "401772814": {
+      "spread": 3.5,
+      "favoredTeam": "12"
+    },
+    "401772850": {
+      "spread": 2.5,
+      "favoredTeam": "6"
+    },
+    "401772851": {
+      "spread": 6.5,
+      "favoredTeam": "11"
+    },
+    "401772852": {
+      "spread": 1.5,
+      "favoredTeam": "15"
+    },
+    "401772853": {
+      "spread": 2.5,
+      "favoredTeam": "28"
+    },
+    "401772854": {
+      "spread": 10.5,
+      "favoredTeam": "8"
+    },
+    "401772922": {
+      "spread": 7.5,
+      "favoredTeam": "2"
+    },
+    "401772939": {
+      "spread": 8.5,
+      "favoredTeam": "14"
+    }
+  },
+  "6": {
+    "401772634": {
+      "spread": 6.5,
+      "favoredTeam": "7"
+    },
+    "401772717": {
+      "spread": 4.5,
+      "favoredTeam": "28"
+    },
+    "401772748": {
+      "spread": 6.5,
+      "favoredTeam": "23"
+    },
+    "401772749": {
+      "spread": 3.5,
+      "favoredTeam": "27"
+    },
+    "401772750": {
+      "spread": 3.5,
+      "favoredTeam": "24"
+    },
+    "401772751": {
+      "spread": 3.5,
+      "favoredTeam": "17"
+    },
+    "401772752": {
+      "spread": 13.5,
+      "favoredTeam": "9"
+    },
+    "401772815": {
+      "spread": 4.5,
+      "favoredTeam": "2"
+    },
+    "401772855": {
+      "spread": 6.5,
+      "favoredTeam": "14"
+    },
+    "401772856": {
+      "spread": 9.5,
+      "favoredTeam": "11"
+    },
+    "401772857": {
+      "spread": 1.5,
+      "favoredTeam": "26"
+    },
+    "401772858": {
+      "spread": 2.5,
+      "favoredTeam": "6"
+    },
+    "401772859": {
+      "spread": 4.5,
+      "favoredTeam": "13"
+    },
+    "401772923": {
+      "spread": 2.5,
+      "favoredTeam": "8"
+    },
+    "401772940": {
+      "spread": 7.5,
+      "favoredTeam": "21"
+    }
+  },
+  "7": {
+    "401772635": {
+      "spread": 3.5,
+      "favoredTeam": "14"
+    },
+    "401772753": {
+      "spread": 12.5,
+      "favoredTeam": "12"
+    },
+    "401772754": {
+      "spread": 2.5,
+      "favoredTeam": "5"
+    },
+    "401772755": {
+      "spread": 6.5,
+      "favoredTeam": "17"
+    },
+    "401772756": {
+      "spread": 1.5,
+      "favoredTeam": "24"
+    },
+    "401772757": {
+      "spread": 7.5,
+      "favoredTeam": "7"
+    },
+    "401772816": {
+      "spread": 5.5,
+      "favoredTeam": "8"
+    },
+    "401772826": {
+      "spread": 3.5,
+      "favoredTeam": "26"
+    },
+    "401772860": {
+      "spread": 1.5,
+      "favoredTeam": "29"
+    },
+    "401772861": {
+      "spread": 4.5,
+      "favoredTeam": "3"
+    },
+    "401772862": {
+      "spread": 2.5,
+      "favoredTeam": "21"
+    },
+    "401772863": {
+      "spread": 0,
+      "favoredTeam": "9"
+    },
+    "401772864": {
+      "spread": 1.5,
+      "favoredTeam": "28"
+    },
+    "401772924": {
+      "spread": 2.5,
+      "favoredTeam": "25"
+    },
+    "401772941": {
+      "spread": 7.5,
+      "favoredTeam": "23"
+    }
+  },
+  "8": {
+    "401772758": {
+      "spread": 6.5,
+      "favoredTeam": "4"
+    },
+    "401772759": {
+      "spread": 6.5,
+      "favoredTeam": "33"
+    },
+    "401772760": {
+      "spread": 7.5,
+      "favoredTeam": "1"
+    },
+    "401772761": {
+      "spread": 14.5,
+      "favoredTeam": "11"
+    },
+    "401772762": {
+      "spread": 3.5,
+      "favoredTeam": "7"
+    },
+    "401772817": {
+      "spread": 11.5,
+      "favoredTeam": "12"
+    },
+    "401772865": {
+      "spread": 7.5,
+      "favoredTeam": "2"
+    },
+    "401772866": {
+      "spread": 2.5,
+      "favoredTeam": "34"
+    },
+    "401772867": {
+      "spread": 7.5,
+      "favoredTeam": "21"
+    },
+    "401772868": {
+      "spread": 7.5,
+      "favoredTeam": "17"
+    },
+    "401772869": {
+      "spread": 4.5,
+      "favoredTeam": "27"
+    },
+    "401772925": {
+      "spread": 2.5,
+      "favoredTeam": "9"
+    },
+    "401772942": {
+      "spread": 3,
+      "favoredTeam": "24"
+    }
+  },
+  "9": {
+    "401772763": {
+      "spread": 5.5,
+      "favoredTeam": "17"
+    },
+    "401772764": {
+      "spread": 9.5,
+      "favoredTeam": "24"
+    },
+    "401772765": {
+      "spread": 2.5,
+      "favoredTeam": "3"
+    },
+    "401772766": {
+      "spread": 3.5,
+      "favoredTeam": "11"
+    },
+    "401772767": {
+      "spread": 2.5,
+      "favoredTeam": "25"
+    },
+    "401772768": {
+      "spread": 2.5,
+      "favoredTeam": "12"
+    },
+    "401772818": {
+      "spread": 2.5,
+      "favoredTeam": "6"
+    },
+    "401772870": {
+      "spread": 1.5,
+      "favoredTeam": "34"
+    },
+    "401772871": {
+      "spread": 9.5,
+      "favoredTeam": "8"
+    },
+    "401772872": {
+      "spread": 13.5,
+      "favoredTeam": "9"
+    },
+    "401772873": {
+      "spread": 2.5,
+      "favoredTeam": "30"
+    },
+    "401772874": {
+      "spread": 14.5,
+      "favoredTeam": "14"
+    },
+    "401772926": {
+      "spread": 2.5,
+      "favoredTeam": "26"
+    },
+    "401772943": {
+      "spread": 7.5,
+      "favoredTeam": "33"
+    }
+  },
+  "10": {
+    "401772630": {
+      "spread": 1.5,
+      "favoredTeam": "9"
+    },
+    "401772636": {
+      "spread": 6.5,
+      "favoredTeam": "11"
+    },
+    "401772769": {
+      "spread": 2.5,
+      "favoredTeam": "5"
+    },
+    "401772770": {
+      "spread": 1.5,
+      "favoredTeam": "30"
+    },
+    "401772771": {
+      "spread": 8.5,
+      "favoredTeam": "2"
+    },
+    "401772772": {
+      "spread": 2.5,
+      "favoredTeam": "27"
+    },
+    "401772773": {
+      "spread": 6.5,
+      "favoredTeam": "26"
+    },
+    "401772875": {
+      "spread": 4.5,
+      "favoredTeam": "3"
+    },
+    "401772876": {
+      "spread": 4.5,
+      "favoredTeam": "33"
+    },
+    "401772877": {
+      "spread": 5.5,
+      "favoredTeam": "29"
+    },
+    "401772878": {
+      "spread": 7.5,
+      "favoredTeam": "8"
+    },
+    "401772879": {
+      "spread": 4.5,
+      "favoredTeam": "14"
+    },
+    "401772927": {
+      "spread": 2.5,
+      "favoredTeam": "24"
+    },
+    "401772944": {
+      "spread": 9.5,
+      "favoredTeam": "7"
+    }
+  },
+  "11": {
+    "401772631": {
+      "spread": 2.5,
+      "favoredTeam": "15"
+    },
+    "401772774": {
+      "spread": 5.5,
+      "favoredTeam": "23"
+    },
+    "401772775": {
+      "spread": 2.5,
+      "favoredTeam": "24"
+    },
+    "401772776": {
+      "spread": 5.5,
+      "favoredTeam": "2"
+    },
+    "401772777": {
+      "spread": 7.5,
+      "favoredTeam": "33"
+    },
+    "401772778": {
+      "spread": 3.5,
+      "favoredTeam": "12"
+    },
+    "401772819": {
+      "spread": 3.5,
+      "favoredTeam": "6"
+    },
+    "401772880": {
+      "spread": 2.5,
+      "favoredTeam": "16"
+    },
+    "401772881": {
+      "spread": 6.5,
+      "favoredTeam": "34"
+    },
+    "401772882": {
+      "spread": 3.5,
+      "favoredTeam": "1"
+    },
+    "401772883": {
+      "spread": 7.5,
+      "favoredTeam": "9"
+    },
+    "401772884": {
+      "spread": 3.5,
+      "favoredTeam": "14"
+    },
+    "401772885": {
+      "spread": 2.5,
+      "favoredTeam": "25"
+    },
+    "401772928": {
+      "spread": 2.5,
+      "favoredTeam": "21"
+    },
+    "401772945": {
+      "spread": 13,
+      "favoredTeam": "17"
+    }
+  },
   "12": {
     "401772779": {
       "spread": 3.5,
@@ -253,6 +733,72 @@
     "401772946": {
       "spread": 4.5,
       "favoredTeam": "2"
+    }
+  },
+  "13": {
+    "401772621": {
+      "spread": 7,
+      "favoredTeam": "21"
+    },
+    "401772694": {
+      "spread": 3,
+      "favoredTeam": "12"
+    },
+    "401772785": {
+      "spread": 6,
+      "favoredTeam": "25"
+    },
+    "401772786": {
+      "spread": 6.5,
+      "favoredTeam": "30"
+    },
+    "401772787": {
+      "spread": 4.5,
+      "favoredTeam": "34"
+    },
+    "401772788": {
+      "spread": 9.5,
+      "favoredTeam": "24"
+    },
+    "401772789": {
+      "spread": 4,
+      "favoredTeam": "2"
+    },
+    "401772821": {
+      "spread": 7.5,
+      "favoredTeam": "17"
+    },
+    "401772891": {
+      "spread": 2.5,
+      "favoredTeam": "8"
+    },
+    "401772892": {
+      "spread": 6,
+      "favoredTeam": "15"
+    },
+    "401772893": {
+      "spread": 2.5,
+      "favoredTeam": "1"
+    },
+    "401772894": {
+      "spread": 10,
+      "favoredTeam": "14"
+    },
+    "401772895": {
+      "spread": 2.5,
+      "favoredTeam": "27"
+    },
+    "401772896": {
+      "spread": 8.5,
+      "favoredTeam": "26"
+    },
+    "401772930": {
+      "spread": 6.5,
+      "favoredTeam": "33"
+    },
+    "401772931": {
+      "spread": 6.5,
+      "favoredTeam": "7"
     }
   }
 }
