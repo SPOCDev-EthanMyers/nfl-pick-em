@@ -1,4 +1,3 @@
-
 # Sports Pick 'Em App Instructions
 
 ## **Goal**
