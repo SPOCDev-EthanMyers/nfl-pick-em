@@ -135,6 +135,19 @@
   border-width: 3px;
 }
 
+
+.selection-cell.loser {
+  box-shadow: 0 0 15px rgba(255, 50, 50, 0.5);
+  border-color: #ff3232 !important;
+  border-width: 3px;
+}
+
+.selection-cell.push {
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+  border-color: #ffa500 !important;
+  border-width: 3px;
+}
+
 .win-checkmark {
   position: absolute;
   top: -2px;
@@ -144,6 +157,36 @@
   font-size: 0.7rem;
   font-weight: 700;
   padding: 2px 4px;
+  border-radius: 0 3px 0 3px;
+  line-height: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.loss-xmark {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #ff3232;
+  color: #1a1a2e;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 4px;
+  border-radius: 0 3px 0 3px;
+  line-height: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.push-mark {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #ffa500;
+  color: #1a1a2e;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 2px 6px;
   border-radius: 0 3px 0 3px;
   line-height: 1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -265,9 +308,15 @@
     font-size: 0.95rem;
   }
 
-  .win-checkmark {
-    font-size: 0.65rem;
-    padding: 2px 3px;
+  .win-checkmark,
+  .loss-xmark {
+    font-size: 0.6rem;
+    padding: 1px 2px;
+  }
+
+  .push-mark {
+    font-size: 0.75rem;
+    padding: 1px 4px;
   }
 }
 
@@ -348,8 +397,14 @@
     font-size: 1.3rem;
   }
 
-  .win-checkmark {
-    font-size: 0.6rem;
-    padding: 1px 2px;
+  .win-checkmark,
+  .loss-xmark {
+    font-size: 0.65rem;
+    padding: 2px 3px;
+  }
+
+  .push-mark {
+    font-size: 0.8rem;
+    padding: 2px 5px;
   }
 }

@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 5000;
+const PORT = 5001;
 
 // Middleware
 app.use(cors());
@@ -13,9 +13,10 @@ app.use(express.json());
 
 // Data file paths
 const DATA_DIR = path.join(__dirname, 'data');
-const SPREADS_FILE = path.join(DATA_DIR, 'spreads.json');
-const PLAYERS_FILE = path.join(DATA_DIR, 'players.json');
+const SPREADS_FILE = path.join(DATA_DIR, 'spreads-by-week.json');
+const PLAYERS_FILE = path.join(DATA_DIR, 'players-by-week.json');
 const SETTINGS_FILE = path.join(DATA_DIR, 'settings.json');
+const WEEKS_FILE = path.join(DATA_DIR, 'weeks.json');
 
 // Ensure data directory exists
 if (!fs.existsSync(DATA_DIR)) {
@@ -30,8 +31,9 @@ function initDataFile(filePath, defaultData) {
 }
 
 initDataFile(SPREADS_FILE, {});
-initDataFile(PLAYERS_FILE, []);
+initDataFile(PLAYERS_FILE, {});
 initDataFile(SETTINGS_FILE, { currentWeek: 1 });
+initDataFile(WEEKS_FILE, []);
 
 // Helper function to read JSON file
 function readJsonFile(filePath) {
@@ -55,91 +57,37 @@ function writeJsonFile(filePath, data) {
   }
 }
 
-// Helper function to calculate date range for NFL week
-// Returns Thursday - Monday range based on current day
-function getWeekDateRange() {
-  const today = new Date();
-  const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
+// Helper function to get week date range by week number
+function getWeekDateRange(weekNumber) {
+  const weeks = readJsonFile(WEEKS_FILE);
+  const week = weeks.find(w => w.week === parseInt(weekNumber));
 
-  let thursday, monday;
-
-  switch (dayOfWeek) {
-    case 2: // Tuesday - Get upcoming Thursday - Monday
-      thursday = new Date(today);
-      thursday.setDate(today.getDate() + 2); // Next Thursday
-      monday = new Date(thursday);
-      monday.setDate(thursday.getDate() + 4); // Following Monday
-      break;
-
-    case 3: // Wednesday - Get upcoming Thursday - Monday
-      thursday = new Date(today);
-      thursday.setDate(today.getDate() + 1); // Next Thursday (tomorrow)
-      monday = new Date(thursday);
-      monday.setDate(thursday.getDate() + 4); // Following Monday
-      break;
-
-    case 4: // Thursday - Get current Thursday - Monday
-      thursday = new Date(today); // Today (Thursday)
-      monday = new Date(thursday);
-      monday.setDate(thursday.getDate() + 4); // This coming Monday
-      break;
-
-    case 5: // Friday - Get yesterday's Thursday - Monday
-      thursday = new Date(today);
-      thursday.setDate(today.getDate() - 1); // Yesterday (Thursday)
-      monday = new Date(thursday);
-      monday.setDate(thursday.getDate() + 4); // This coming Monday
-      break;
-
-    case 6: // Saturday - Get recent Thursday - Monday
-      thursday = new Date(today);
-      thursday.setDate(today.getDate() - 2); // Last Thursday
-      monday = new Date(thursday);
-      monday.setDate(thursday.getDate() + 4); // This coming Monday
-      break;
-
-    case 0: // Sunday - Get recent Thursday - Monday
-      thursday = new Date(today);
-      thursday.setDate(today.getDate() - 3); // Last Thursday
-      monday = new Date(thursday);
-      monday.setDate(thursday.getDate() + 4); // Tomorrow (Monday)
-      break;
-
-    case 1: // Monday - Get recent Thursday - Current Monday
-      thursday = new Date(today);
-      thursday.setDate(today.getDate() - 4); // Last Thursday
-      monday = new Date(today); // Today (Monday)
-      break;
-
-    default:
-      // Fallback (shouldn't happen)
-      thursday = new Date(today);
-      monday = new Date(today);
+  if (!week) {
+    throw new Error(`Week ${weekNumber} not found`);
   }
 
-  // Format dates as YYYYMMDD
-  const formatDate = (date) => {
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    return `${year}${month}${day}`;
-  };
-
   return {
-    startDate: formatDate(thursday),
-    endDate: formatDate(monday)
+    startDate: week.start,
+    endDate: week.end
   };
 }
 
 // API Routes
 
-// GET /api/games - Fetch NFL games from ESPN API
+// GET /api/weeks - Get all week mappings
+app.get('/api/weeks', (req, res) => {
+  const weeks = readJsonFile(WEEKS_FILE);
+  res.json(weeks || []);
+});
+
+// GET /api/games - Fetch NFL games from ESPN API for a specific week
 app.get('/api/games', async (req, res) => {
   try {
-    const { startDate, endDate } = getWeekDateRange();
+    const week = req.query.week || 1;
+    const { startDate, endDate } = getWeekDateRange(week);
     const url = `https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=${startDate}-${endDate}`;
 
-    console.log(`Fetching games from ESPN API: ${url}`);
+    console.log(`Fetching games for week ${week} from ESPN API: ${url}`);
     const response = await axios.get(url);
 
     // Transform ESPN data to simpler format based on actual API structure
@@ -182,45 +130,62 @@ app.get('/api/games', async (req, res) => {
   }
 });
 
-// GET /api/spreads - Get all spreads
+// GET /api/spreads - Get spreads for a specific week
 app.get('/api/spreads', (req, res) => {
-  const spreads = readJsonFile(SPREADS_FILE);
-  res.json(spreads || {});
+  const week = req.query.week || 1;
+  const allSpreads = readJsonFile(SPREADS_FILE) || {};
+  const weekSpreads = allSpreads[week] || {};
+  res.json(weekSpreads);
 });
 
-// POST /api/spreads - Update spreads for a game
+// POST /api/spreads - Update spreads for a game in a specific week
 app.post('/api/spreads', (req, res) => {
-  const { gameId, spread, favoredTeam } = req.body;
+  const { gameId, spread, favoredTeam, week } = req.body;
 
-  if (!gameId) {
-    return res.status(400).json({ error: 'gameId is required' });
+  if (!gameId || !week) {
+    return res.status(400).json({ error: 'gameId and week are required' });
   }
 
-  const spreads = readJsonFile(SPREADS_FILE) || {};
-  spreads[gameId] = { spread, favoredTeam };
+  const allSpreads = readJsonFile(SPREADS_FILE) || {};
 
-  if (writeJsonFile(SPREADS_FILE, spreads)) {
-    res.json({ success: true, spreads });
+  // Initialize week if it doesn't exist
+  if (!allSpreads[week]) {
+    allSpreads[week] = {};
+  }
+
+  allSpreads[week][gameId] = { spread, favoredTeam };
+
+  if (writeJsonFile(SPREADS_FILE, allSpreads)) {
+    res.json({ success: true, spreads: allSpreads[week] });
   } else {
     res.status(500).json({ error: 'Failed to save spreads' });
   }
 });
 
-// GET /api/players - Get all players and their selections
+// GET /api/players - Get players and their selections for a specific week
 app.get('/api/players', (req, res) => {
-  const players = readJsonFile(PLAYERS_FILE);
-  res.json(players || []);
+  const week = req.query.week || 1;
+  const allPlayers = readJsonFile(PLAYERS_FILE) || {};
+  const weekPlayers = allPlayers[week] || [];
+  res.json(weekPlayers);
 });
 
-// POST /api/players - Add or update a player
+// POST /api/players - Add or update a player for a specific week
 app.post('/api/players', (req, res) => {
-  const { name, selections } = req.body;
+  const { name, selections, week } = req.body;
 
-  if (!name) {
-    return res.status(400).json({ error: 'Player name is required' });
+  if (!name || !week) {
+    return res.status(400).json({ error: 'Player name and week are required' });
   }
 
-  const players = readJsonFile(PLAYERS_FILE) || [];
+  const allPlayers = readJsonFile(PLAYERS_FILE) || {};
+
+  // Initialize week if it doesn't exist
+  if (!allPlayers[week]) {
+    allPlayers[week] = [];
+  }
+
+  const players = allPlayers[week];
   const existingPlayerIndex = players.findIndex(p => p.name === name);
 
   if (existingPlayerIndex >= 0) {
@@ -231,23 +196,30 @@ app.post('/api/players', (req, res) => {
     players.push({ name, selections: selections || {} });
   }
 
-  if (writeJsonFile(PLAYERS_FILE, players)) {
-    res.json({ success: true, players });
+  if (writeJsonFile(PLAYERS_FILE, allPlayers)) {
+    res.json({ success: true, players: allPlayers[week] });
   } else {
     res.status(500).json({ error: 'Failed to save player' });
   }
 });
 
-// PUT /api/players/:name/selection - Update a player's selection for a game
+// PUT /api/players/:name/selection - Update a player's selection for a game in a specific week
 app.put('/api/players/:name/selection', (req, res) => {
   const { name } = req.params;
-  const { gameId, teamId } = req.body;
+  const { gameId, teamId, week } = req.body;
 
-  if (!gameId) {
-    return res.status(400).json({ error: 'gameId is required' });
+  if (!gameId || !week) {
+    return res.status(400).json({ error: 'gameId and week are required' });
   }
 
-  const players = readJsonFile(PLAYERS_FILE) || [];
+  const allPlayers = readJsonFile(PLAYERS_FILE) || {};
+
+  // Initialize week if it doesn't exist
+  if (!allPlayers[week]) {
+    allPlayers[week] = [];
+  }
+
+  const players = allPlayers[week];
   const player = players.find(p => p.name === name);
 
   if (!player) {
@@ -260,20 +232,28 @@ app.put('/api/players/:name/selection', (req, res) => {
 
   player.selections[gameId] = teamId;
 
-  if (writeJsonFile(PLAYERS_FILE, players)) {
+  if (writeJsonFile(PLAYERS_FILE, allPlayers)) {
     res.json({ success: true, player });
   } else {
     res.status(500).json({ error: 'Failed to update selection' });
   }
 });
 
-// DELETE /api/players/:name - Delete a player
+// DELETE /api/players/:name - Delete a player from a specific week
 app.delete('/api/players/:name', (req, res) => {
   const { name } = req.params;
-  const players = readJsonFile(PLAYERS_FILE) || [];
-  const filteredPlayers = players.filter(p => p.name !== name);
+  const week = req.query.week || 1;
 
-  if (writeJsonFile(PLAYERS_FILE, filteredPlayers)) {
+  const allPlayers = readJsonFile(PLAYERS_FILE) || {};
+
+  if (!allPlayers[week]) {
+    return res.status(404).json({ error: 'Week not found' });
+  }
+
+  const filteredPlayers = allPlayers[week].filter(p => p.name !== name);
+  allPlayers[week] = filteredPlayers;
+
+  if (writeJsonFile(PLAYERS_FILE, allPlayers)) {
     res.json({ success: true, players: filteredPlayers });
   } else {
     res.status(500).json({ error: 'Failed to delete player' });

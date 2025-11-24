@@ -5,15 +5,11 @@ function AdminPanel({
   games,
   spreads,
   players,
-  currentWeek,
   onSpreadUpdate,
-  onWeekUpdate,
   onAddPlayer,
-  onDeletePlayer,
-  onRefresh
+  onDeletePlayer
 }) {
   const [newPlayerName, setNewPlayerName] = useState('');
-  const [weekInput, setWeekInput] = useState(currentWeek);
   const [spreadInputs, setSpreadInputs] = useState({});
 
   // Handle spread change for a game
@@ -58,13 +54,6 @@ function AdminPanel({
     onSpreadUpdate(gameId, currentSpread.spread, newFavoredTeam);
   };
 
-  // Handle week update
-  const handleWeekSubmit = () => {
-    if (weekInput && !isNaN(parseInt(weekInput))) {
-      onWeekUpdate(parseInt(weekInput));
-    }
-  };
-
   // Handle add player
   const handleAddPlayerSubmit = (e) => {
     e.preventDefault();
@@ -76,28 +65,6 @@ function AdminPanel({
 
   return (
     <div className="admin-panel">
-      <div className="admin-section">
-        <h3>⚙️ Settings</h3>
-        <div className="admin-controls">
-          <div className="control-group">
-            <label>Current Week:</label>
-            <div className="input-group">
-              <input
-                type="number"
-                min="1"
-                max="18"
-                value={weekInput}
-                onChange={(e) => setWeekInput(e.target.value)}
-              />
-              <button onClick={handleWeekSubmit}>Update Week</button>
-            </div>
-          </div>
-          <button className="refresh-btn" onClick={onRefresh}>
-            🔄 Refresh All Data
-          </button>
-        </div>
-      </div>
-
       <div className="admin-section">
         <h3>👥 Players</h3>
         <form onSubmit={handleAddPlayerSubmit} className="add-player-form">

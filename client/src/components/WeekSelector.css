@@ -1,0 +1,143 @@
+.week-selector {
+  position: relative;
+}
+
+.week-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.week-display:hover {
+  background: linear-gradient(135deg, #2d5a3d 0%, #3d6a4d 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.week-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #a0d468;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.week-number {
+  font-size: 32px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  min-width: 40px;
+  text-align: center;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  color: #a0d468;
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+}
+
+.week-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 1000;
+  background: #1a1a1a;
+  border: 2px solid #2d5a3d;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  min-width: 280px;
+  animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.week-dropdown-content {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.week-dropdown-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.week-dropdown-content::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.week-dropdown-content::-webkit-scrollbar-thumb {
+  background: #2d5a3d;
+  border-radius: 4px;
+}
+
+.week-dropdown-content::-webkit-scrollbar-thumb:hover {
+  background: #3d6a4d;
+}
+
+.week-option {
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.week-option:last-child {
+  border-bottom: none;
+}
+
+.week-option:hover {
+  background: #2a2a2a;
+}
+
+.week-option.active {
+  background: #2d5a3d;
+  border-left: 4px solid #a0d468;
+}
+
+.week-option.active:hover {
+  background: #3d6a4d;
+}
+
+.option-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.option-dates {
+  font-size: 12px;
+  color: #888;
+  font-weight: 500;
+}
+
+.week-option.active .option-label {
+  color: #a0d468;
+}
+
+.week-option.active .option-dates {
+  color: #a0d468;
+  opacity: 0.8;
+}
