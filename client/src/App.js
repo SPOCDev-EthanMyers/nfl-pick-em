@@ -36,7 +36,7 @@ function App() {
       ]);
 
       setWeeks(weeksRes.data);
-      const initialWeek = 12;
+      const initialWeek = 14;
       setSettings(settingsRes.data);
       setCurrentWeek(initialWeek);
     } catch (error) {
