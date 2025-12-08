@@ -1,0 +1,457 @@
+/* Analytics Modal Overlay */
+.analytics-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Analytics Modal Container */
+.analytics-modal {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 16px;
+  width: 95%;
+  max-width: 1400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 2px solid #2ecc71;
+  animation: slideUp 0.3s ease-out;
+  color: #fff;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar */
+.analytics-modal::-webkit-scrollbar {
+  width: 12px;
+}
+
+.analytics-modal::-webkit-scrollbar-track {
+  background: #0f3460;
+  border-radius: 10px;
+}
+
+.analytics-modal::-webkit-scrollbar-thumb {
+  background: #2ecc71;
+  border-radius: 10px;
+}
+
+.analytics-modal::-webkit-scrollbar-thumb:hover {
+  background: #27ae60;
+}
+
+/* Header */
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 2px solid #2ecc71;
+  background: linear-gradient(90deg, #16213e 0%, #0f3460 100%);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.analytics-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2ecc71;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.close-button {
+  background: transparent;
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  font-size: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.close-button:hover {
+  background: #e74c3c;
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+/* Matchup Header */
+.matchup-header {
+  padding: 20px 32px;
+  background: linear-gradient(90deg, #0f3460 0%, #16213e 100%);
+  border-bottom: 1px solid #2ecc71;
+  text-align: center;
+}
+
+.team-matchup {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.team-matchup .team-name {
+  color: #2ecc71;
+}
+
+.team-matchup .at-symbol {
+  color: #f39c12;
+  margin: 0 12px;
+}
+
+.current-spread {
+  font-size: 18px;
+  color: #ecf0f1;
+  font-weight: 600;
+}
+
+/* Week Range Selector */
+.week-range-selector {
+  padding: 16px 32px;
+  background: #0f3460;
+  border-bottom: 1px solid #2ecc71;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.week-range-selector label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ecf0f1;
+}
+
+.week-range-selector input[type="number"] {
+  width: 70px;
+  padding: 8px 12px;
+  border: 2px solid #2ecc71;
+  border-radius: 6px;
+  background: #16213e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.week-range-selector input[type="number"]:focus {
+  outline: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 8px rgba(46, 204, 113, 0.4);
+}
+
+.week-range-selector button {
+  padding: 8px 20px;
+  background: #2ecc71;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.week-range-selector button:hover {
+  background: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.4);
+}
+
+.range-info {
+  color: #95a5a6;
+  font-size: 14px;
+  font-style: italic;
+  margin-left: auto;
+}
+
+/* Analytics Content */
+.analytics-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 24px 32px;
+}
+
+@media (max-width: 1200px) {
+  .analytics-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Team Analytics */
+.team-analytics {
+  background: #0f3460;
+  border-radius: 12px;
+  padding: 24px;
+  border: 2px solid #2ecc71;
+}
+
+.team-section h3 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  color: #2ecc71;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #2ecc71;
+  padding-bottom: 8px;
+}
+
+.games-analyzed {
+  color: #95a5a6;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  font-style: italic;
+}
+
+/* Stats Section */
+.stats-section {
+  background: #16213e;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-left: 4px solid #2ecc71;
+}
+
+.stats-section h4 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: #f39c12;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Stat Record */
+.stat-record, .stat-line, .stat-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+.stat-record:last-child, .stat-line:last-child, .stat-detail:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  color: #bdc3c7;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.stat-value {
+  color: #2ecc71;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Weekly Table */
+.weekly-table-wrapper {
+  overflow-x: auto;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #2ecc71;
+}
+
+.weekly-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: #0f3460;
+}
+
+.weekly-table thead {
+  background: #16213e;
+  position: sticky;
+  top: 0;
+}
+
+.weekly-table th {
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: 700;
+  color: #2ecc71;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #2ecc71;
+}
+
+.weekly-table td {
+  padding: 10px 8px;
+  text-align: center;
+  border-bottom: 1px solid rgba(46, 204, 113, 0.1);
+  color: #ecf0f1;
+}
+
+.weekly-table tbody tr {
+  transition: background 0.2s;
+}
+
+.weekly-table tbody tr:hover {
+  background: rgba(46, 204, 113, 0.1);
+}
+
+.weekly-table tbody tr.covered {
+  background: rgba(46, 204, 113, 0.15);
+}
+
+.weekly-table tbody tr.not-covered {
+  background: rgba(231, 76, 60, 0.1);
+}
+
+.weekly-table td.positive {
+  color: #2ecc71;
+  font-weight: 700;
+}
+
+.weekly-table td.negative {
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+/* Loading & Error States */
+.analytics-loading, .analytics-error {
+  padding: 60px 32px;
+  text-align: center;
+}
+
+.analytics-loading {
+  font-size: 24px;
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+.analytics-error h3 {
+  color: #e74c3c;
+  margin-bottom: 12px;
+}
+
+.analytics-error p {
+  color: #ecf0f1;
+  margin-bottom: 20px;
+}
+
+.analytics-error button {
+  padding: 12px 24px;
+  background: #2ecc71;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.analytics-error button:hover {
+  background: #27ae60;
+  transform: translateY(-2px);
+}
+
+.no-data {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.no-data h3 {
+  color: #f39c12;
+  margin-bottom: 12px;
+}
+
+.no-data p {
+  color: #95a5a6;
+}
+
+/* Analytics Overlay on Game Cards */
+.analytics-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(50, 205, 50, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 10;
+  cursor: pointer;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.game-card.analytics-clickable:hover .analytics-overlay {
+  opacity: 1;
+  background: rgba(50, 205, 50, 0.95);
+}
+
+.analytics-text {
+  color: #000;
+  font-weight: 900;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease 0.1s;
+}
+
+.game-card.analytics-clickable:hover .analytics-text {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Make game cards clickable */
+.game-card.analytics-clickable {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card.analytics-clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(50, 205, 50, 0.4);
+}

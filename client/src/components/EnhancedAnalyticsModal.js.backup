@@ -1,0 +1,557 @@
+import React, { useState, useEffect } from 'react';
+import {
+  LineChart, Line, BarChart, Bar, RadarChart, Radar, PolarGrid,
+  PolarAngleAxis, PolarRadiusAxis, XAxis, YAxis, CartesianGrid,
+  Tooltip, Legend, ResponsiveContainer, Cell
+} from 'recharts';
+import './EnhancedAnalyticsModal.css';
+
+function EnhancedAnalyticsModal({ game, week, onClose }) {
+  const [analytics, setAnalytics] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [startWeek, setStartWeek] = useState(1);
+  const [endWeek, setEndWeek] = useState(week - 1);
+
+  useEffect(() => {
+    fetchAnalytics();
+  }, [game.id, week, startWeek, endWeek]);
+
+  const fetchAnalytics = async () => {
+    try {
+      setLoading(true);
+      const queryParams = new URLSearchParams({
+        week,
+        startWeek,
+        endWeek,
+        homeTeamId: game.homeTeam.id,
+        awayTeamId: game.awayTeam.id,
+        homeTeamName: game.homeTeam.name,
+        awayTeamName: game.awayTeam.name,
+        homeTeamAbbr: game.homeTeam.abbreviation,
+        awayTeamAbbr: game.awayTeam.abbreviation
+      });
+
+      const response = await fetch(
+        `http://localhost:5001/api/analytics/game/${game.id}?${queryParams}`
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: Failed to fetch analytics`);
+      }
+
+      const data = await response.json();
+      setAnalytics(data);
+      setError(null);
+    } catch (err) {
+      setError(err.message);
+      console.error('Error fetching analytics:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="enhanced-modal-overlay" onClick={onClose}>
+        <div className="enhanced-modal" onClick={(e) => e.stopPropagation()}>
+          <div className="loading-container">
+            <div className="loading-spinner"></div>
+            <p>Crunching the numbers...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="enhanced-modal-overlay" onClick={onClose}>
+        <div className="enhanced-modal" onClick={(e) => e.stopPropagation()}>
+          <div className="error-container">
+            <h3>⚠️ Error Loading Analytics</h3>
+            <p>{error}</p>
+            <button onClick={onClose} className="btn-primary">Close</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (!analytics) {
+    return null;
+  }
+
+  const { homeTeam, awayTeam, currentSpread, currentWeek, analysisRange } = analytics;
+
+  return (
+    <div className="enhanced-modal-overlay" onClick={onClose}>
+      <div className="enhanced-modal" onClick={(e) => e.stopPropagation()}>
+        {/* Header */}
+        <ModalHeader
+          homeTeam={homeTeam}
+          awayTeam={awayTeam}
+          currentSpread={currentSpread}
+          currentWeek={currentWeek}
+          onClose={onClose}
+        />
+
+        {/* Week Range Selector */}
+        <WeekRangeSelector
+          startWeek={startWeek}
+          endWeek={endWeek}
+          currentWeek={currentWeek}
+          analysisRange={analysisRange}
+          onStartWeekChange={setStartWeek}
+          onEndWeekChange={setEndWeek}
+        />
+
+        {/* Main Content */}
+        <div className="enhanced-content">
+          {/* Key Stats Comparison */}
+          <KeyStatsComparison homeTeam={homeTeam} awayTeam={awayTeam} />
+
+          {/* Spread Performance Chart */}
+          <SpreadPerformanceChart homeTeam={homeTeam} awayTeam={awayTeam} />
+
+          {/* Radar Comparison */}
+          <RadarComparison homeTeam={homeTeam} awayTeam={awayTeam} />
+
+          {/* Points Trends */}
+          <PointsTrendsChart homeTeam={homeTeam} awayTeam={awayTeam} />
+
+          {/* Detailed Stats Grid */}
+          <DetailedStatsGrid homeTeam={homeTeam} awayTeam={awayTeam} />
+
+          {/* Weekly Performance Tables */}
+          <WeeklyPerformanceTables homeTeam={homeTeam} awayTeam={awayTeam} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Header Component
+function ModalHeader({ homeTeam, awayTeam, currentSpread, currentWeek, onClose }) {
+  return (
+    <div className="enhanced-header">
+      <div className="header-content">
+        <h2>📊 SPREAD ANALYSIS - WEEK {currentWeek}</h2>
+        <div className="matchup-display">
+          <span className="team-name away">{awayTeam.abbreviation}</span>
+          <span className="vs-symbol">@</span>
+          <span className="team-name home">{homeTeam.abbreviation}</span>
+        </div>
+        {currentSpread && currentSpread.value && (
+          <div className="spread-info">
+            <strong>Spread:</strong> {currentSpread.favoredTeam === homeTeam.id ? homeTeam.abbreviation : awayTeam.abbreviation} -{currentSpread.value}
+          </div>
+        )}
+      </div>
+      <button className="enhanced-close-btn" onClick={onClose}>×</button>
+    </div>
+  );
+}
+
+// Week Range Selector
+function WeekRangeSelector({ startWeek, endWeek, currentWeek, analysisRange, onStartWeekChange, onEndWeekChange }) {
+  return (
+    <div className="week-range-selector">
+      <label>
+        <span>Analysis Range:</span>
+        <input
+          type="number"
+          min="1"
+          max={currentWeek - 1}
+          value={startWeek}
+          onChange={(e) => onStartWeekChange(parseInt(e.target.value))}
+        />
+        <span>to</span>
+        <input
+          type="number"
+          min={startWeek}
+          max={currentWeek - 1}
+          value={endWeek}
+          onChange={(e) => onEndWeekChange(parseInt(e.target.value))}
+        />
+      </label>
+      <span className="range-display">
+        Analyzing Weeks {analysisRange.startWeek}-{analysisRange.endWeek}
+      </span>
+    </div>
+  );
+}
+
+// Key Stats Comparison - Big Tiles
+function KeyStatsComparison({ homeTeam, awayTeam }) {
+  return (
+    <div className="key-stats-section">
+      <h3>📈 Key Performance Indicators</h3>
+      <div className="stats-grid">
+        <StatTile
+          label="ATS Record"
+          homeValue={`${homeTeam.analytics.spreadRecord.wins}-${homeTeam.analytics.spreadRecord.losses}`}
+          awayValue={`${awayTeam.analytics.spreadRecord.wins}-${awayTeam.analytics.spreadRecord.losses}`}
+          homePercent={parseFloat(homeTeam.analytics.spreadRecord.percentage)}
+          awayPercent={parseFloat(awayTeam.analytics.spreadRecord.percentage)}
+          homeLabel={homeTeam.abbreviation}
+          awayLabel={awayTeam.abbreviation}
+        />
+        <StatTile
+          label="As Favorite"
+          homeValue={`${homeTeam.analytics.favoriteRecord.wins}-${homeTeam.analytics.favoriteRecord.losses}`}
+          awayValue={`${awayTeam.analytics.favoriteRecord.wins}-${awayTeam.analytics.favoriteRecord.losses}`}
+          homePercent={parseFloat(homeTeam.analytics.favoriteRecord.percentage)}
+          awayPercent={parseFloat(awayTeam.analytics.favoriteRecord.percentage)}
+          homeLabel={homeTeam.abbreviation}
+          awayLabel={awayTeam.abbreviation}
+        />
+        <StatTile
+          label="As Underdog"
+          homeValue={`${homeTeam.analytics.underdogRecord.wins}-${homeTeam.analytics.underdogRecord.losses}`}
+          awayValue={`${awayTeam.analytics.underdogRecord.wins}-${awayTeam.analytics.underdogRecord.losses}`}
+          homePercent={parseFloat(homeTeam.analytics.underdogRecord.percentage)}
+          awayPercent={parseFloat(awayTeam.analytics.underdogRecord.percentage)}
+          homeLabel={homeTeam.abbreviation}
+          awayLabel={awayTeam.abbreviation}
+        />
+        <StatTile
+          label="Avg Points Scored"
+          homeValue={homeTeam.analytics.pointsStats.scored.mean}
+          awayValue={awayTeam.analytics.pointsStats.scored.mean}
+          homePercent={null}
+          awayPercent={null}
+          homeLabel={homeTeam.abbreviation}
+          awayLabel={awayTeam.abbreviation}
+          isNumeric
+        />
+        <StatTile
+          label="Avg Points Allowed"
+          homeValue={homeTeam.analytics.pointsStats.allowed.mean}
+          awayValue={awayTeam.analytics.pointsStats.allowed.mean}
+          homePercent={null}
+          awayPercent={null}
+          homeLabel={homeTeam.abbreviation}
+          awayLabel={awayTeam.abbreviation}
+          isNumeric
+          lowerIsBetter
+        />
+        <StatTile
+          label="Home/Away ATS"
+          homeValue={`${homeTeam.analytics.homeRecord.wins}-${homeTeam.analytics.homeRecord.losses}`}
+          awayValue={`${awayTeam.analytics.awayRecord.wins}-${awayTeam.analytics.awayRecord.losses}`}
+          homePercent={parseFloat(homeTeam.analytics.homeRecord.percentage)}
+          awayPercent={parseFloat(awayTeam.analytics.awayRecord.percentage)}
+          homeLabel={`${homeTeam.abbreviation} (H)`}
+          awayLabel={`${awayTeam.abbreviation} (A)`}
+        />
+      </div>
+    </div>
+  );
+}
+
+// Individual Stat Tile
+function StatTile({ label, homeValue, awayValue, homePercent, awayPercent, homeLabel, awayLabel, isNumeric, lowerIsBetter }) {
+  let winner = null;
+  if (homePercent !== null && awayPercent !== null) {
+    winner = homePercent > awayPercent ? 'home' : awayPercent > homePercent ? 'away' : 'tie';
+  } else if (isNumeric) {
+    const homeNum = parseFloat(homeValue);
+    const awayNum = parseFloat(awayValue);
+    if (lowerIsBetter) {
+      winner = homeNum < awayNum ? 'home' : awayNum < homeNum ? 'away' : 'tie';
+    } else {
+      winner = homeNum > awayNum ? 'home' : awayNum > homeNum ? 'away' : 'tie';
+    }
+  }
+
+  return (
+    <div className="stat-tile">
+      <div className="tile-header">{label}</div>
+      <div className="tile-comparison">
+        <div className={`team-stat ${winner === 'home' ? 'winner' : ''}`}>
+          <div className="team-label">{homeLabel}</div>
+          <div className="stat-value">{homeValue}</div>
+          {homePercent !== null && <div className="stat-percent">{homePercent}%</div>}
+        </div>
+        <div className="vs-divider">VS</div>
+        <div className={`team-stat ${winner === 'away' ? 'winner' : ''}`}>
+          <div className="team-label">{awayLabel}</div>
+          <div className="stat-value">{awayValue}</div>
+          {awayPercent !== null && <div className="stat-percent">{awayPercent}%</div>}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Spread Performance Bar Chart
+function SpreadPerformanceChart({ homeTeam, awayTeam }) {
+  const data = [
+    {
+      category: 'Overall ATS',
+      [homeTeam.abbreviation]: parseFloat(homeTeam.analytics.spreadRecord.percentage) || 0,
+      [awayTeam.abbreviation]: parseFloat(awayTeam.analytics.spreadRecord.percentage) || 0
+    },
+    {
+      category: 'As Favorite',
+      [homeTeam.abbreviation]: parseFloat(homeTeam.analytics.favoriteRecord.percentage) || 0,
+      [awayTeam.abbreviation]: parseFloat(awayTeam.analytics.favoriteRecord.percentage) || 0
+    },
+    {
+      category: 'As Underdog',
+      [homeTeam.abbreviation]: parseFloat(homeTeam.analytics.underdogRecord.percentage) || 0,
+      [awayTeam.abbreviation]: parseFloat(awayTeam.analytics.underdogRecord.percentage) || 0
+    },
+    {
+      category: 'Home/Away',
+      [homeTeam.abbreviation]: parseFloat(homeTeam.analytics.homeRecord.percentage) || 0,
+      [awayTeam.abbreviation]: parseFloat(awayTeam.analytics.awayRecord.percentage) || 0
+    }
+  ];
+
+  return (
+    <div className="chart-section">
+      <h3>📊 Spread Performance Comparison</h3>
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" stroke="#2c3e50" />
+          <XAxis dataKey="category" stroke="#ecf0f1" />
+          <YAxis stroke="#ecf0f1" domain={[0, 100]} />
+          <Tooltip contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #2ecc71' }} />
+          <Legend />
+          <Bar dataKey={homeTeam.abbreviation} fill="#3498db" />
+          <Bar dataKey={awayTeam.abbreviation} fill="#e74c3c" />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
+// Radar Chart Comparison
+function RadarComparison({ homeTeam, awayTeam }) {
+  const data = [
+    {
+      metric: 'Overall ATS %',
+      [homeTeam.abbreviation]: parseFloat(homeTeam.analytics.spreadRecord.percentage) || 0,
+      [awayTeam.abbreviation]: parseFloat(awayTeam.analytics.spreadRecord.percentage) || 0,
+      fullMark: 100
+    },
+    {
+      metric: 'Offensive Power',
+      [homeTeam.abbreviation]: Math.min(parseFloat(homeTeam.analytics.pointsStats.scored.mean) * 3, 100),
+      [awayTeam.abbreviation]: Math.min(parseFloat(awayTeam.analytics.pointsStats.scored.mean) * 3, 100),
+      fullMark: 100
+    },
+    {
+      metric: 'Defensive Strength',
+      [homeTeam.abbreviation]: Math.max(100 - (parseFloat(homeTeam.analytics.pointsStats.allowed.mean) * 3), 0),
+      [awayTeam.abbreviation]: Math.max(100 - (parseFloat(awayTeam.analytics.pointsStats.allowed.mean) * 3), 0),
+      fullMark: 100
+    },
+    {
+      metric: 'Consistency',
+      [homeTeam.abbreviation]: homeTeam.analytics.totalGames > 0 ? (homeTeam.analytics.spreadRecord.wins / homeTeam.analytics.totalGames * 100) : 0,
+      [awayTeam.abbreviation]: awayTeam.analytics.totalGames > 0 ? (awayTeam.analytics.spreadRecord.wins / awayTeam.analytics.totalGames * 100) : 0,
+      fullMark: 100
+    }
+  ];
+
+  return (
+    <div className="chart-section">
+      <h3>🎯 Performance Radar</h3>
+      <ResponsiveContainer width="100%" height={350}>
+        <RadarChart data={data}>
+          <PolarGrid stroke="#2c3e50" />
+          <PolarAngleAxis dataKey="metric" stroke="#ecf0f1" />
+          <PolarRadiusAxis domain={[0, 100]} stroke="#ecf0f1" />
+          <Radar name={homeTeam.abbreviation} dataKey={homeTeam.abbreviation} stroke="#3498db" fill="#3498db" fillOpacity={0.6} />
+          <Radar name={awayTeam.abbreviation} dataKey={awayTeam.abbreviation} stroke="#e74c3c" fill="#e74c3c" fillOpacity={0.6} />
+          <Legend />
+          <Tooltip contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #2ecc71' }} />
+        </RadarChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
+// Points Trends Line Chart
+function PointsTrendsChart({ homeTeam, awayTeam }) {
+  const maxLength = Math.max(homeTeam.analytics.weeklyData.length, awayTeam.analytics.weeklyData.length);
+  const data = [];
+
+  for (let i = 0; i < maxLength; i++) {
+    const homeData = homeTeam.analytics.weeklyData[i];
+    const awayData = awayTeam.analytics.weeklyData[i];
+    data.push({
+      week: homeData?.week || awayData?.week || i + 1,
+      [`${homeTeam.abbreviation} Scored`]: homeData?.pointsScored || null,
+      [`${homeTeam.abbreviation} Allowed`]: homeData?.pointsAllowed || null,
+      [`${awayTeam.abbreviation} Scored`]: awayData?.pointsScored || null,
+      [`${awayTeam.abbreviation} Allowed`]: awayData?.pointsAllowed || null
+    });
+  }
+
+  return (
+    <div className="chart-section">
+      <h3>📈 Points Trends (Week by Week)</h3>
+      <ResponsiveContainer width="100%" height={300}>
+        <LineChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" stroke="#2c3e50" />
+          <XAxis dataKey="week" stroke="#ecf0f1" label={{ value: 'Week', position: 'insideBottom', offset: -5 }} />
+          <YAxis stroke="#ecf0f1" label={{ value: 'Points', angle: -90, position: 'insideLeft' }} />
+          <Tooltip contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #2ecc71' }} />
+          <Legend />
+          <Line type="monotone" dataKey={`${homeTeam.abbreviation} Scored`} stroke="#3498db" strokeWidth={2} />
+          <Line type="monotone" dataKey={`${homeTeam.abbreviation} Allowed`} stroke="#3498db" strokeWidth={2} strokeDasharray="5 5" />
+          <Line type="monotone" dataKey={`${awayTeam.abbreviation} Scored`} stroke="#e74c3c" strokeWidth={2} />
+          <Line type="monotone" dataKey={`${awayTeam.abbreviation} Allowed`} stroke="#e74c3c" strokeWidth={2} strokeDasharray="5 5" />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
+// Detailed Stats Grid
+function DetailedStatsGrid({ homeTeam, awayTeam }) {
+  return (
+    <div className="detailed-stats-grid">
+      <h3>📋 Detailed Statistics</h3>
+      <div className="stats-columns">
+        <DetailedTeamStats team={homeTeam} label="Home Team" />
+        <DetailedTeamStats team={awayTeam} label="Away Team" />
+      </div>
+    </div>
+  );
+}
+
+function DetailedTeamStats({ team, label }) {
+  const { analytics } = team;
+
+  return (
+    <div className="team-detailed-stats">
+      <h4>{team.name} ({label})</h4>
+
+      <div className="stat-group">
+        <h5>Cover Margins (As Favorite)</h5>
+        {analytics.coverStats.favorite.mean !== null ? (
+          <>
+            <p>Mean: <strong>{analytics.coverStats.favorite.mean.toFixed(1)}</strong></p>
+            <p>Median: <strong>{analytics.coverStats.favorite.median.toFixed(1)}</strong></p>
+            {analytics.coverStats.favorite.maxCover && (
+              <p>Best: <strong>+{analytics.coverStats.favorite.maxCover.value.toFixed(1)}</strong> (Wk {analytics.coverStats.favorite.maxCover.week} vs {analytics.coverStats.favorite.maxCover.opponent})</p>
+            )}
+            {analytics.coverStats.favorite.maxMiss && (
+              <p>Worst: <strong>{analytics.coverStats.favorite.maxMiss.value.toFixed(1)}</strong> (Wk {analytics.coverStats.favorite.maxMiss.week} vs {analytics.coverStats.favorite.maxMiss.opponent})</p>
+            )}
+          </>
+        ) : (
+          <p className="no-data">No favorite games in range</p>
+        )}
+      </div>
+
+      <div className="stat-group">
+        <h5>Cover Margins (As Underdog)</h5>
+        {analytics.coverStats.underdog.mean !== null ? (
+          <>
+            <p>Mean: <strong>{analytics.coverStats.underdog.mean.toFixed(1)}</strong></p>
+            <p>Median: <strong>{analytics.coverStats.underdog.median.toFixed(1)}</strong></p>
+            {analytics.coverStats.underdog.maxCover && (
+              <p>Best: <strong>+{analytics.coverStats.underdog.maxCover.value.toFixed(1)}</strong> (Wk {analytics.coverStats.underdog.maxCover.week} vs {analytics.coverStats.underdog.maxCover.opponent})</p>
+            )}
+            {analytics.coverStats.underdog.maxMiss && (
+              <p>Worst: <strong>{analytics.coverStats.underdog.maxMiss.value.toFixed(1)}</strong> (Wk {analytics.coverStats.underdog.maxMiss.week} vs {analytics.coverStats.underdog.maxMiss.opponent})</p>
+            )}
+          </>
+        ) : (
+          <p className="no-data">No underdog games in range</p>
+        )}
+      </div>
+
+      <div className="stat-group">
+        <h5>Scoring Stats</h5>
+        {analytics.pointsStats.scored.stats ? (
+          <>
+            <p>Mean: <strong>{analytics.pointsStats.scored.stats.mean?.toFixed(1) || 'N/A'}</strong></p>
+            <p>Median: <strong>{analytics.pointsStats.scored.stats.median?.toFixed(1) || 'N/A'}</strong></p>
+            <p>Max: <strong>{analytics.pointsStats.scored.stats.max?.toFixed(1) || 'N/A'}</strong></p>
+            <p>Min: <strong>{analytics.pointsStats.scored.stats.min?.toFixed(1) || 'N/A'}</strong></p>
+          </>
+        ) : (
+          <p className="no-data">No scoring data available</p>
+        )}
+      </div>
+
+      <div className="stat-group">
+        <h5>Defensive Stats (Points Allowed)</h5>
+        {analytics.pointsStats.allowed.stats ? (
+          <>
+            <p>Mean: <strong>{analytics.pointsStats.allowed.stats.mean?.toFixed(1) || 'N/A'}</strong></p>
+            <p>Median: <strong>{analytics.pointsStats.allowed.stats.median?.toFixed(1) || 'N/A'}</strong></p>
+            <p>Max: <strong>{analytics.pointsStats.allowed.stats.max?.toFixed(1) || 'N/A'}</strong></p>
+            <p>Min: <strong>{analytics.pointsStats.allowed.stats.min?.toFixed(1) || 'N/A'}</strong></p>
+          </>
+        ) : (
+          <p className="no-data">No defensive data available</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// Weekly Performance Tables
+function WeeklyPerformanceTables({ homeTeam, awayTeam }) {
+  return (
+    <div className="weekly-tables-section">
+      <h3>📅 Week-by-Week Performance</h3>
+      <div className="tables-grid">
+        <WeeklyTable team={homeTeam} />
+        <WeeklyTable team={awayTeam} />
+      </div>
+    </div>
+  );
+}
+
+function WeeklyTable({ team }) {
+  return (
+    <div className="weekly-table-container">
+      <h4>{team.name}</h4>
+      <div className="table-wrapper">
+        <table className="weekly-table">
+          <thead>
+            <tr>
+              <th>Wk</th>
+              <th>Opp</th>
+              <th>H/A</th>
+              <th>F/U</th>
+              <th>Spread</th>
+              <th>Pts</th>
+              <th>PA</th>
+              <th>Cover</th>
+              <th>Margin</th>
+            </tr>
+          </thead>
+          <tbody>
+            {team.analytics.weeklyData.map((week, idx) => (
+              <tr key={idx} className={week.covered ? 'row-covered' : 'row-missed'}>
+                <td>{week.week}</td>
+                <td>{week.opponent}</td>
+                <td>{week.isHome ? 'H' : 'A'}</td>
+                <td>{week.isFavorite ? 'F' : 'U'}</td>
+                <td>{week.spread.toFixed(1)}</td>
+                <td>{week.pointsScored}</td>
+                <td>{week.pointsAllowed}</td>
+                <td className="cover-icon">{week.covered ? '✓' : '✗'}</td>
+                <td className={week.coverMargin > 0 ? 'positive' : 'negative'}>
+                  {week.coverMargin?.toFixed(1) || '-'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+export default EnhancedAnalyticsModal;

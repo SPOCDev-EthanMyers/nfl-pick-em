@@ -5,6 +5,7 @@ import AdminPanel from './components/AdminPanel';
 import GameList from './components/GameList';
 import PlayerList from './components/PlayerList';
 import WeekSelector from './components/WeekSelector';
+import WeeklySummaryModal from './components/WeeklySummaryModal';
 
 function App() {
   const [games, setGames] = useState([]);
@@ -15,6 +16,7 @@ function App() {
   const [currentWeek, setCurrentWeek] = useState(1);
   const [loading, setLoading] = useState(true);
   const [showAdmin, setShowAdmin] = useState(false);
+  const [showSummary, setShowSummary] = useState(false);
 
   // Fetch weeks on component mount
   useEffect(() => {
@@ -178,12 +180,20 @@ function App() {
             weeks={weeks}
             onWeekChange={handleWeekChange}
           />
-          <button
-            className="admin-toggle"
-            onClick={() => setShowAdmin(!showAdmin)}
-          >
-            {showAdmin ? 'Hide Admin' : 'Show Admin'}
-          </button>
+          <div className="header-actions">
+            <button
+              className="summary-btn"
+              onClick={() => setShowSummary(true)}
+            >
+              Week Summary
+            </button>
+            <button
+              className="admin-toggle"
+              onClick={() => setShowAdmin(!showAdmin)}
+            >
+              {showAdmin ? 'Hide Admin' : 'Show Admin'}
+            </button>
+          </div>
         </div>
       </header>
 
@@ -211,7 +221,7 @@ function App() {
           </div>
         ) : (
           <div className="pick-em-grid">
-            <GameList games={games} spreads={spreads} />
+            <GameList games={games} spreads={spreads} currentWeek={currentWeek} />
             <PlayerList
               games={games}
               players={players}
@@ -221,6 +231,18 @@ function App() {
           </div>
         )}
       </main>
+
+      {/* Weekly Summary Modal */}
+      {showSummary && (
+        <WeeklySummaryModal
+          week={currentWeek}
+          onClose={() => setShowSummary(false)}
+          onGameClick={(game) => {
+            setShowSummary(false);
+            // Game click is already handled by GameList component
+          }}
+        />
+      )}
     </div>
   );
 }

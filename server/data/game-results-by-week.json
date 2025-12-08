@@ -1,0 +1,5205 @@
+{
+  "1": {
+    "401772510": {
+      "gameId": "401772510",
+      "week": 1,
+      "date": "2025-09-05T00:20Z",
+      "homeTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 24,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 20,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "spread": {
+        "value": 7,
+        "favoredTeam": "21"
+      }
+    },
+    "401772714": {
+      "gameId": "401772714",
+      "week": 1,
+      "date": "2025-09-06T00:00Z",
+      "homeTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 27,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "awayTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 21,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "12"
+      }
+    },
+    "401772718": {
+      "gameId": "401772718",
+      "week": 1,
+      "date": "2025-09-07T17:00Z",
+      "homeTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 13,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 20,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "22"
+      }
+    },
+    "401772719": {
+      "gameId": "401772719",
+      "week": 1,
+      "date": "2025-09-07T17:00Z",
+      "homeTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 33,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 8,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 1,
+        "favoredTeam": "11"
+      }
+    },
+    "401772720": {
+      "gameId": "401772720",
+      "week": 1,
+      "date": "2025-09-07T17:00Z",
+      "homeTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 13,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "awayTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 20,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "spread": {
+        "value": 2,
+        "favoredTeam": "17"
+      }
+    },
+    "401772721": {
+      "gameId": "401772721",
+      "week": 1,
+      "date": "2025-09-07T17:00Z",
+      "homeTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 32,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 34,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 3,
+        "favoredTeam": "23"
+      }
+    },
+    "401772722": {
+      "gameId": "401772722",
+      "week": 1,
+      "date": "2025-09-07T20:25Z",
+      "homeTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 27,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 13,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "8"
+      }
+    },
+    "401772723": {
+      "gameId": "401772723",
+      "week": 1,
+      "date": "2025-09-07T20:25Z",
+      "homeTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 14,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "awayTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 9,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "spread": {
+        "value": 3,
+        "favoredTeam": "14"
+      }
+    },
+    "401772810": {
+      "gameId": "401772810",
+      "week": 1,
+      "date": "2025-09-09T00:15Z",
+      "homeTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 24,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "awayTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 27,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "spread": {
+        "value": 1,
+        "favoredTeam": "3"
+      }
+    },
+    "401772827": {
+      "gameId": "401772827",
+      "week": 1,
+      "date": "2025-09-07T17:00Z",
+      "homeTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 21,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 6,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "28"
+      }
+    },
+    "401772828": {
+      "gameId": "401772828",
+      "week": 1,
+      "date": "2025-09-07T17:00Z",
+      "homeTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 26,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "awayTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 10,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "30"
+      }
+    },
+    "401772829": {
+      "gameId": "401772829",
+      "week": 1,
+      "date": "2025-09-07T17:00Z",
+      "homeTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 16,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 17,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "4"
+      }
+    },
+    "401772830": {
+      "gameId": "401772830",
+      "week": 1,
+      "date": "2025-09-07T17:00Z",
+      "homeTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 20,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 23,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "27"
+      }
+    },
+    "401772831": {
+      "gameId": "401772831",
+      "week": 1,
+      "date": "2025-09-07T20:05Z",
+      "homeTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 13,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "awayTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 17,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "25"
+      }
+    },
+    "401772832": {
+      "gameId": "401772832",
+      "week": 1,
+      "date": "2025-09-07T20:05Z",
+      "homeTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 20,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 12,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "spread": {
+        "value": 8,
+        "favoredTeam": "7"
+      }
+    },
+    "401772918": {
+      "gameId": "401772918",
+      "week": 1,
+      "date": "2025-09-08T00:20Z",
+      "homeTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 41,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "awayTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 40,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "2"
+      }
+    }
+  },
+  "2": {
+    "401772715": {
+      "gameId": "401772715",
+      "week": 2,
+      "date": "2025-09-15T23:00Z",
+      "homeTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 19,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "awayTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 20,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "34"
+      }
+    },
+    "401772724": {
+      "gameId": "401772724",
+      "week": 2,
+      "date": "2025-09-14T17:00Z",
+      "homeTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 19,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "awayTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 33,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "14"
+      }
+    },
+    "401772725": {
+      "gameId": "401772725",
+      "week": 2,
+      "date": "2025-09-14T17:00Z",
+      "homeTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 31,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 27,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "4"
+      }
+    },
+    "401772726": {
+      "gameId": "401772726",
+      "week": 2,
+      "date": "2025-09-14T17:00Z",
+      "homeTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 41,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 17,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "spread": {
+        "value": 11.5,
+        "favoredTeam": "33"
+      }
+    },
+    "401772727": {
+      "gameId": "401772727",
+      "week": 2,
+      "date": "2025-09-14T17:00Z",
+      "homeTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 10,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 30,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "2"
+      }
+    },
+    "401772728": {
+      "gameId": "401772728",
+      "week": 2,
+      "date": "2025-09-14T17:00Z",
+      "homeTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 27,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 33,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "15"
+      }
+    },
+    "401772729": {
+      "gameId": "401772729",
+      "week": 2,
+      "date": "2025-09-14T20:05Z",
+      "homeTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 29,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 28,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "7"
+      }
+    },
+    "401772730": {
+      "gameId": "401772730",
+      "week": 2,
+      "date": "2025-09-14T20:05Z",
+      "homeTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 27,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 22,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "22"
+      }
+    },
+    "401772811": {
+      "gameId": "401772811",
+      "week": 2,
+      "date": "2025-09-16T02:00Z",
+      "homeTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 9,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "awayTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 20,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "24"
+      }
+    },
+    "401772833": {
+      "gameId": "401772833",
+      "week": 2,
+      "date": "2025-09-14T17:00Z",
+      "homeTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 21,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 26,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "25"
+      }
+    },
+    "401772834": {
+      "gameId": "401772834",
+      "week": 2,
+      "date": "2025-09-14T17:00Z",
+      "homeTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 40,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 37,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "6"
+      }
+    },
+    "401772835": {
+      "gameId": "401772835",
+      "week": 2,
+      "date": "2025-09-14T17:00Z",
+      "homeTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 52,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 21,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "8"
+      }
+    },
+    "401772836": {
+      "gameId": "401772836",
+      "week": 2,
+      "date": "2025-09-14T17:00Z",
+      "homeTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 17,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 31,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "23"
+      }
+    },
+    "401772837": {
+      "gameId": "401772837",
+      "week": 2,
+      "date": "2025-09-14T20:25Z",
+      "homeTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 17,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 20,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "21"
+      }
+    },
+    "401772919": {
+      "gameId": "401772919",
+      "week": 2,
+      "date": "2025-09-15T00:20Z",
+      "homeTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 6,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "awayTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 22,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "16"
+      }
+    },
+    "401772936": {
+      "gameId": "401772936",
+      "week": 2,
+      "date": "2025-09-12T00:15Z",
+      "homeTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 27,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 18,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "9"
+      }
+    }
+  },
+  "3": {
+    "401772731": {
+      "gameId": "401772731",
+      "week": 3,
+      "date": "2025-09-21T17:00Z",
+      "homeTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 48,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 10,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "16"
+      }
+    },
+    "401772732": {
+      "gameId": "401772732",
+      "week": 3,
+      "date": "2025-09-21T17:00Z",
+      "homeTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 14,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "awayTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 21,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "23"
+      }
+    },
+    "401772733": {
+      "gameId": "401772733",
+      "week": 3,
+      "date": "2025-09-21T17:00Z",
+      "homeTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 20,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "awayTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 41,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "11"
+      }
+    },
+    "401772734": {
+      "gameId": "401772734",
+      "week": 3,
+      "date": "2025-09-21T17:00Z",
+      "homeTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 17,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "awayTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 10,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "30"
+      }
+    },
+    "401772735": {
+      "gameId": "401772735",
+      "week": 3,
+      "date": "2025-09-21T20:05Z",
+      "homeTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 23,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "awayTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 20,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "24"
+      }
+    },
+    "401772736": {
+      "gameId": "401772736",
+      "week": 3,
+      "date": "2025-09-21T20:05Z",
+      "homeTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 44,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "awayTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 13,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "26"
+      }
+    },
+    "401772812": {
+      "gameId": "401772812",
+      "week": 3,
+      "date": "2025-09-23T00:15Z",
+      "homeTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 30,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 38,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "33"
+      }
+    },
+    "401772838": {
+      "gameId": "401772838",
+      "week": 3,
+      "date": "2025-09-21T17:00Z",
+      "homeTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 30,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 0,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "1"
+      }
+    },
+    "401772839": {
+      "gameId": "401772839",
+      "week": 3,
+      "date": "2025-09-21T17:00Z",
+      "homeTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 33,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 26,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "21"
+      }
+    },
+    "401772840": {
+      "gameId": "401772840",
+      "week": 3,
+      "date": "2025-09-21T17:00Z",
+      "homeTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 29,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "awayTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 27,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "27"
+      }
+    },
+    "401772841": {
+      "gameId": "401772841",
+      "week": 3,
+      "date": "2025-09-21T17:00Z",
+      "homeTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 41,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 24,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "28"
+      }
+    },
+    "401772842": {
+      "gameId": "401772842",
+      "week": 3,
+      "date": "2025-09-21T17:00Z",
+      "homeTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 13,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "awayTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 10,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "9"
+      }
+    },
+    "401772843": {
+      "gameId": "401772843",
+      "week": 3,
+      "date": "2025-09-21T20:25Z",
+      "homeTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 16,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "awayTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 15,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "25"
+      }
+    },
+    "401772844": {
+      "gameId": "401772844",
+      "week": 3,
+      "date": "2025-09-21T20:25Z",
+      "homeTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 31,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "awayTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 14,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "6"
+      }
+    },
+    "401772920": {
+      "gameId": "401772920",
+      "week": 3,
+      "date": "2025-09-22T00:20Z",
+      "homeTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 9,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "awayTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 22,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "12"
+      }
+    },
+    "401772937": {
+      "gameId": "401772937",
+      "week": 3,
+      "date": "2025-09-19T00:15Z",
+      "homeTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 31,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "awayTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 21,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 12.5,
+        "favoredTeam": "2"
+      }
+    }
+  },
+  "4": {
+    "401772632": {
+      "gameId": "401772632",
+      "week": 4,
+      "date": "2025-09-28T13:30Z",
+      "homeTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 24,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 21,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "16"
+      }
+    },
+    "401772716": {
+      "gameId": "401772716",
+      "week": 4,
+      "date": "2025-09-30T00:15Z",
+      "homeTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 28,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 3,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 8.5,
+        "favoredTeam": "7"
+      }
+    },
+    "401772737": {
+      "gameId": "401772737",
+      "week": 4,
+      "date": "2025-09-28T17:00Z",
+      "homeTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 21,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "awayTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 18,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "24"
+      }
+    },
+    "401772738": {
+      "gameId": "401772738",
+      "week": 4,
+      "date": "2025-09-28T17:00Z",
+      "homeTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 26,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 0,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "34"
+      }
+    },
+    "401772739": {
+      "gameId": "401772739",
+      "week": 4,
+      "date": "2025-09-28T17:00Z",
+      "homeTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 34,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 27,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "1"
+      }
+    },
+    "401772740": {
+      "gameId": "401772740",
+      "week": 4,
+      "date": "2025-09-28T17:00Z",
+      "homeTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 31,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "awayTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 19,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 14.5,
+        "favoredTeam": "2"
+      }
+    },
+    "401772741": {
+      "gameId": "401772741",
+      "week": 4,
+      "date": "2025-09-28T20:25Z",
+      "homeTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 37,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 20,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "33"
+      }
+    },
+    "401772742": {
+      "gameId": "401772742",
+      "week": 4,
+      "date": "2025-09-28T20:25Z",
+      "homeTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 24,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 25,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "13"
+      }
+    },
+    "401772813": {
+      "gameId": "401772813",
+      "week": 4,
+      "date": "2025-09-29T23:15Z",
+      "homeTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 27,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 21,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "15"
+      }
+    },
+    "401772845": {
+      "gameId": "401772845",
+      "week": 4,
+      "date": "2025-09-28T17:00Z",
+      "homeTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 25,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "awayTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 31,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "21"
+      }
+    },
+    "401772846": {
+      "gameId": "401772846",
+      "week": 4,
+      "date": "2025-09-28T17:00Z",
+      "homeTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 34,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 10,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "spread": {
+        "value": 9.5,
+        "favoredTeam": "8"
+      }
+    },
+    "401772847": {
+      "gameId": "401772847",
+      "week": 4,
+      "date": "2025-09-28T17:00Z",
+      "homeTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 42,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "awayTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 13,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "17"
+      }
+    },
+    "401772848": {
+      "gameId": "401772848",
+      "week": 4,
+      "date": "2025-09-28T20:05Z",
+      "homeTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 21,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "awayTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 26,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "25"
+      }
+    },
+    "401772849": {
+      "gameId": "401772849",
+      "week": 4,
+      "date": "2025-09-28T20:05Z",
+      "homeTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 27,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "awayTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 20,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "14"
+      }
+    },
+    "401772921": {
+      "gameId": "401772921",
+      "week": 4,
+      "date": "2025-09-29T00:20Z",
+      "homeTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 40,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "awayTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 40,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "9"
+      }
+    },
+    "401772938": {
+      "gameId": "401772938",
+      "week": 4,
+      "date": "2025-09-26T00:15Z",
+      "homeTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 20,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 23,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "26"
+      }
+    }
+  },
+  "5": {
+    "401772633": {
+      "gameId": "401772633",
+      "week": 5,
+      "date": "2025-10-05T13:30Z",
+      "homeTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 17,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "awayTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 21,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "16"
+      }
+    },
+    "401772743": {
+      "gameId": "401772743",
+      "week": 5,
+      "date": "2025-10-05T17:00Z",
+      "homeTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 10,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 44,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "34"
+      }
+    },
+    "401772744": {
+      "gameId": "401772744",
+      "week": 5,
+      "date": "2025-10-05T17:00Z",
+      "homeTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 26,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 14,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "18"
+      }
+    },
+    "401772745": {
+      "gameId": "401772745",
+      "week": 5,
+      "date": "2025-10-05T17:00Z",
+      "homeTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 17,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 21,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "21"
+      }
+    },
+    "401772746": {
+      "gameId": "401772746",
+      "week": 5,
+      "date": "2025-10-05T20:05Z",
+      "homeTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 35,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "awayTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 38,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "26"
+      }
+    },
+    "401772747": {
+      "gameId": "401772747",
+      "week": 5,
+      "date": "2025-10-05T20:05Z",
+      "homeTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 21,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 22,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "22"
+      }
+    },
+    "401772814": {
+      "gameId": "401772814",
+      "week": 5,
+      "date": "2025-10-07T00:15Z",
+      "homeTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 31,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "awayTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 28,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "12"
+      }
+    },
+    "401772850": {
+      "gameId": "401772850",
+      "week": 5,
+      "date": "2025-10-05T17:00Z",
+      "homeTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 22,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 37,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "6"
+      }
+    },
+    "401772851": {
+      "gameId": "401772851",
+      "week": 5,
+      "date": "2025-10-05T17:00Z",
+      "homeTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 40,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 6,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "11"
+      }
+    },
+    "401772852": {
+      "gameId": "401772852",
+      "week": 5,
+      "date": "2025-10-05T17:00Z",
+      "homeTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 27,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 24,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "15"
+      }
+    },
+    "401772853": {
+      "gameId": "401772853",
+      "week": 5,
+      "date": "2025-10-05T20:25Z",
+      "homeTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 10,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "awayTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 27,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "28"
+      }
+    },
+    "401772854": {
+      "gameId": "401772854",
+      "week": 5,
+      "date": "2025-10-05T20:25Z",
+      "homeTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 24,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 37,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "spread": {
+        "value": 10.5,
+        "favoredTeam": "8"
+      }
+    },
+    "401772922": {
+      "gameId": "401772922",
+      "week": 5,
+      "date": "2025-10-06T00:20Z",
+      "homeTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 20,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "awayTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 23,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "2"
+      }
+    },
+    "401772939": {
+      "gameId": "401772939",
+      "week": 5,
+      "date": "2025-10-03T00:15Z",
+      "homeTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 23,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "awayTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 26,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "spread": {
+        "value": 8.5,
+        "favoredTeam": "14"
+      }
+    }
+  },
+  "6": {
+    "401772634": {
+      "gameId": "401772634",
+      "week": 6,
+      "date": "2025-10-12T13:30Z",
+      "homeTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 11,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 13,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "7"
+      }
+    },
+    "401772717": {
+      "gameId": "401772717",
+      "week": 6,
+      "date": "2025-10-14T00:15Z",
+      "homeTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 24,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 25,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "28"
+      }
+    },
+    "401772748": {
+      "gameId": "401772748",
+      "week": 6,
+      "date": "2025-10-12T17:00Z",
+      "homeTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 23,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 9,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "23"
+      }
+    },
+    "401772749": {
+      "gameId": "401772749",
+      "week": 6,
+      "date": "2025-10-12T20:25Z",
+      "homeTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 30,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "awayTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 19,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "27"
+      }
+    },
+    "401772750": {
+      "gameId": "401772750",
+      "week": 6,
+      "date": "2025-10-12T17:00Z",
+      "homeTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 27,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 29,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "24"
+      }
+    },
+    "401772751": {
+      "gameId": "401772751",
+      "week": 6,
+      "date": "2025-10-12T17:00Z",
+      "homeTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 19,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 25,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "17"
+      }
+    },
+    "401772752": {
+      "gameId": "401772752",
+      "week": 6,
+      "date": "2025-10-12T20:25Z",
+      "homeTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 27,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 18,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 13.5,
+        "favoredTeam": "9"
+      }
+    },
+    "401772815": {
+      "gameId": "401772815",
+      "week": 6,
+      "date": "2025-10-13T23:15Z",
+      "homeTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 24,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 14,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "2"
+      }
+    },
+    "401772855": {
+      "gameId": "401772855",
+      "week": 6,
+      "date": "2025-10-12T17:00Z",
+      "homeTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 3,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 17,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "14"
+      }
+    },
+    "401772856": {
+      "gameId": "401772856",
+      "week": 6,
+      "date": "2025-10-12T17:00Z",
+      "homeTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 31,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 27,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 9.5,
+        "favoredTeam": "11"
+      }
+    },
+    "401772857": {
+      "gameId": "401772857",
+      "week": 6,
+      "date": "2025-10-12T17:00Z",
+      "homeTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 12,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "awayTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 20,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "26"
+      }
+    },
+    "401772858": {
+      "gameId": "401772858",
+      "week": 6,
+      "date": "2025-10-12T17:00Z",
+      "homeTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 30,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 27,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "6"
+      }
+    },
+    "401772859": {
+      "gameId": "401772859",
+      "week": 6,
+      "date": "2025-10-12T20:05Z",
+      "homeTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 20,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 10,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "13"
+      }
+    },
+    "401772923": {
+      "gameId": "401772923",
+      "week": 6,
+      "date": "2025-10-13T00:20Z",
+      "homeTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 30,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 17,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "8"
+      }
+    },
+    "401772940": {
+      "gameId": "401772940",
+      "week": 6,
+      "date": "2025-10-10T00:15Z",
+      "homeTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 34,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "awayTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 17,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "21"
+      }
+    }
+  },
+  "7": {
+    "401772635": {
+      "gameId": "401772635",
+      "week": 7,
+      "date": "2025-10-19T13:30Z",
+      "homeTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 7,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "awayTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 35,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "14"
+      }
+    },
+    "401772753": {
+      "gameId": "401772753",
+      "week": 7,
+      "date": "2025-10-19T17:00Z",
+      "homeTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 31,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 0,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "spread": {
+        "value": 12.5,
+        "favoredTeam": "12"
+      }
+    },
+    "401772754": {
+      "gameId": "401772754",
+      "week": 7,
+      "date": "2025-10-19T17:00Z",
+      "homeTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 31,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "awayTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 6,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "5"
+      }
+    },
+    "401772755": {
+      "gameId": "401772755",
+      "week": 7,
+      "date": "2025-10-19T17:00Z",
+      "homeTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 13,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "awayTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 31,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "17"
+      }
+    },
+    "401772756": {
+      "gameId": "401772756",
+      "week": 7,
+      "date": "2025-10-19T20:05Z",
+      "homeTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 24,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "awayTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 38,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "24"
+      }
+    },
+    "401772757": {
+      "gameId": "401772757",
+      "week": 7,
+      "date": "2025-10-19T20:05Z",
+      "homeTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 33,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 32,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "7"
+      }
+    },
+    "401772816": {
+      "gameId": "401772816",
+      "week": 7,
+      "date": "2025-10-20T23:00Z",
+      "homeTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 24,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "awayTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 9,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "8"
+      }
+    },
+    "401772826": {
+      "gameId": "401772826",
+      "week": 7,
+      "date": "2025-10-21T02:00Z",
+      "homeTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 27,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "awayTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 19,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "26"
+      }
+    },
+    "401772860": {
+      "gameId": "401772860",
+      "week": 7,
+      "date": "2025-10-19T17:00Z",
+      "homeTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 6,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 13,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "29"
+      }
+    },
+    "401772861": {
+      "gameId": "401772861",
+      "week": 7,
+      "date": "2025-10-19T17:00Z",
+      "homeTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 26,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "awayTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 14,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "3"
+      }
+    },
+    "401772862": {
+      "gameId": "401772862",
+      "week": 7,
+      "date": "2025-10-19T17:00Z",
+      "homeTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 22,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "awayTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 28,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "21"
+      }
+    },
+    "401772863": {
+      "gameId": "401772863",
+      "week": 7,
+      "date": "2025-10-19T20:25Z",
+      "homeTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 23,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 27,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 0,
+        "favoredTeam": "9"
+      }
+    },
+    "401772864": {
+      "gameId": "401772864",
+      "week": 7,
+      "date": "2025-10-19T20:25Z",
+      "homeTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 44,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "awayTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 22,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "28"
+      }
+    },
+    "401772924": {
+      "gameId": "401772924",
+      "week": 7,
+      "date": "2025-10-20T00:20Z",
+      "homeTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 20,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "awayTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 10,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "25"
+      }
+    },
+    "401772941": {
+      "gameId": "401772941",
+      "week": 7,
+      "date": "2025-10-17T00:15Z",
+      "homeTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 33,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 31,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "23"
+      }
+    }
+  },
+  "8": {
+    "401772758": {
+      "gameId": "401772758",
+      "week": 8,
+      "date": "2025-10-26T17:00Z",
+      "homeTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 38,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 39,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "4"
+      }
+    },
+    "401772759": {
+      "gameId": "401772759",
+      "week": 8,
+      "date": "2025-10-26T17:00Z",
+      "homeTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 30,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 16,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "33"
+      }
+    },
+    "401772760": {
+      "gameId": "401772760",
+      "week": 8,
+      "date": "2025-10-26T17:00Z",
+      "homeTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 10,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 34,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "1"
+      }
+    },
+    "401772761": {
+      "gameId": "401772761",
+      "week": 8,
+      "date": "2025-10-26T20:25Z",
+      "homeTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 38,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 14,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "spread": {
+        "value": 14.5,
+        "favoredTeam": "11"
+      }
+    },
+    "401772762": {
+      "gameId": "401772762",
+      "week": 8,
+      "date": "2025-10-26T20:25Z",
+      "homeTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 44,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 24,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "7"
+      }
+    },
+    "401772817": {
+      "gameId": "401772817",
+      "week": 8,
+      "date": "2025-10-28T00:15Z",
+      "homeTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 28,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 7,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 11.5,
+        "favoredTeam": "12"
+      }
+    },
+    "401772865": {
+      "gameId": "401772865",
+      "week": 8,
+      "date": "2025-10-26T17:00Z",
+      "homeTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 9,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 40,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "2"
+      }
+    },
+    "401772866": {
+      "gameId": "401772866",
+      "week": 8,
+      "date": "2025-10-26T17:00Z",
+      "homeTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 26,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "awayTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 15,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "34"
+      }
+    },
+    "401772867": {
+      "gameId": "401772867",
+      "week": 8,
+      "date": "2025-10-26T17:00Z",
+      "homeTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 38,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 20,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "21"
+      }
+    },
+    "401772868": {
+      "gameId": "401772868",
+      "week": 8,
+      "date": "2025-10-26T17:00Z",
+      "homeTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 32,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 13,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "17"
+      }
+    },
+    "401772869": {
+      "gameId": "401772869",
+      "week": 8,
+      "date": "2025-10-26T20:05Z",
+      "homeTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 3,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 23,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "27"
+      }
+    },
+    "401772925": {
+      "gameId": "401772925",
+      "week": 8,
+      "date": "2025-10-27T00:20Z",
+      "homeTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 25,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 35,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "9"
+      }
+    },
+    "401772942": {
+      "gameId": "401772942",
+      "week": 8,
+      "date": "2025-10-24T00:15Z",
+      "homeTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 37,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "awayTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 10,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "spread": {
+        "value": 3,
+        "favoredTeam": "24"
+      }
+    }
+  },
+  "9": {
+    "401772763": {
+      "gameId": "401772763",
+      "week": 9,
+      "date": "2025-11-02T18:00Z",
+      "homeTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 24,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "awayTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 23,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "17"
+      }
+    },
+    "401772764": {
+      "gameId": "401772764",
+      "week": 9,
+      "date": "2025-11-02T18:00Z",
+      "homeTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 20,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "awayTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 27,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "spread": {
+        "value": 9.5,
+        "favoredTeam": "24"
+      }
+    },
+    "401772765": {
+      "gameId": "401772765",
+      "week": 9,
+      "date": "2025-11-02T18:00Z",
+      "homeTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 42,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 47,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "3"
+      }
+    },
+    "401772766": {
+      "gameId": "401772766",
+      "week": 9,
+      "date": "2025-11-02T18:00Z",
+      "homeTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 27,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 20,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "11"
+      }
+    },
+    "401772767": {
+      "gameId": "401772767",
+      "week": 9,
+      "date": "2025-11-02T18:00Z",
+      "homeTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 24,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "awayTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 34,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "25"
+      }
+    },
+    "401772768": {
+      "gameId": "401772768",
+      "week": 9,
+      "date": "2025-11-02T21:25Z",
+      "homeTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 28,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "awayTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 21,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "12"
+      }
+    },
+    "401772818": {
+      "gameId": "401772818",
+      "week": 9,
+      "date": "2025-11-04T01:15Z",
+      "homeTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 17,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "awayTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 27,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "6"
+      }
+    },
+    "401772870": {
+      "gameId": "401772870",
+      "week": 9,
+      "date": "2025-11-02T18:00Z",
+      "homeTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 15,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "awayTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 18,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "34"
+      }
+    },
+    "401772871": {
+      "gameId": "401772871",
+      "week": 9,
+      "date": "2025-11-02T18:00Z",
+      "homeTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 24,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "awayTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 27,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "spread": {
+        "value": 9.5,
+        "favoredTeam": "8"
+      }
+    },
+    "401772872": {
+      "gameId": "401772872",
+      "week": 9,
+      "date": "2025-11-02T18:00Z",
+      "homeTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 13,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 16,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 13.5,
+        "favoredTeam": "9"
+      }
+    },
+    "401772873": {
+      "gameId": "401772873",
+      "week": 9,
+      "date": "2025-11-02T21:05Z",
+      "homeTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 29,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "awayTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 30,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "30"
+      }
+    },
+    "401772874": {
+      "gameId": "401772874",
+      "week": 9,
+      "date": "2025-11-02T21:05Z",
+      "homeTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 34,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "awayTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 10,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 14.5,
+        "favoredTeam": "14"
+      }
+    },
+    "401772926": {
+      "gameId": "401772926",
+      "week": 9,
+      "date": "2025-11-03T01:20Z",
+      "homeTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 14,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 38,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "26"
+      }
+    },
+    "401772943": {
+      "gameId": "401772943",
+      "week": 9,
+      "date": "2025-10-31T00:15Z",
+      "homeTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 6,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 28,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "33"
+      }
+    }
+  },
+  "10": {
+    "401772630": {
+      "gameId": "401772630",
+      "week": 10,
+      "date": "2025-11-11T01:15Z",
+      "homeTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 7,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 10,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "9"
+      }
+    },
+    "401772636": {
+      "gameId": "401772636",
+      "week": 10,
+      "date": "2025-11-09T14:30Z",
+      "homeTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 31,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 25,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "11"
+      }
+    },
+    "401772769": {
+      "gameId": "401772769",
+      "week": 10,
+      "date": "2025-11-09T18:00Z",
+      "homeTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 27,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 20,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "5"
+      }
+    },
+    "401772770": {
+      "gameId": "401772770",
+      "week": 10,
+      "date": "2025-11-09T18:00Z",
+      "homeTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 36,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "awayTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 29,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "30"
+      }
+    },
+    "401772771": {
+      "gameId": "401772771",
+      "week": 10,
+      "date": "2025-11-09T18:00Z",
+      "homeTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 30,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 13,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "spread": {
+        "value": 8.5,
+        "favoredTeam": "2"
+      }
+    },
+    "401772772": {
+      "gameId": "401772772",
+      "week": 10,
+      "date": "2025-11-09T18:00Z",
+      "homeTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 23,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "awayTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 28,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "27"
+      }
+    },
+    "401772773": {
+      "gameId": "401772773",
+      "week": 10,
+      "date": "2025-11-09T21:05Z",
+      "homeTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 44,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "awayTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 22,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "26"
+      }
+    },
+    "401772875": {
+      "gameId": "401772875",
+      "week": 10,
+      "date": "2025-11-09T18:00Z",
+      "homeTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 24,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 20,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "3"
+      }
+    },
+    "401772876": {
+      "gameId": "401772876",
+      "week": 10,
+      "date": "2025-11-09T18:00Z",
+      "homeTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 19,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "awayTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 27,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "33"
+      }
+    },
+    "401772877": {
+      "gameId": "401772877",
+      "week": 10,
+      "date": "2025-11-09T18:00Z",
+      "homeTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 7,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 17,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "29"
+      }
+    },
+    "401772878": {
+      "gameId": "401772878",
+      "week": 10,
+      "date": "2025-11-09T21:25Z",
+      "homeTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 22,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 44,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "8"
+      }
+    },
+    "401772879": {
+      "gameId": "401772879",
+      "week": 10,
+      "date": "2025-11-09T21:25Z",
+      "homeTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 26,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "awayTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 42,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "14"
+      }
+    },
+    "401772927": {
+      "gameId": "401772927",
+      "week": 10,
+      "date": "2025-11-10T01:20Z",
+      "homeTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 25,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "awayTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 10,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "24"
+      }
+    },
+    "401772944": {
+      "gameId": "401772944",
+      "week": 10,
+      "date": "2025-11-07T01:15Z",
+      "homeTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 10,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 7,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "spread": {
+        "value": 9.5,
+        "favoredTeam": "7"
+      }
+    }
+  },
+  "11": {
+    "401772631": {
+      "gameId": "401772631",
+      "week": 11,
+      "date": "2025-11-16T14:30Z",
+      "homeTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 16,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 13,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "15"
+      }
+    },
+    "401772774": {
+      "gameId": "401772774",
+      "week": 11,
+      "date": "2025-11-16T18:00Z",
+      "homeTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 34,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 12,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "23"
+      }
+    },
+    "401772775": {
+      "gameId": "401772775",
+      "week": 11,
+      "date": "2025-11-16T18:00Z",
+      "homeTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 35,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "awayTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 6,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "24"
+      }
+    },
+    "401772776": {
+      "gameId": "401772776",
+      "week": 11,
+      "date": "2025-11-16T18:00Z",
+      "homeTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 44,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "awayTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 32,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "2"
+      }
+    },
+    "401772777": {
+      "gameId": "401772777",
+      "week": 11,
+      "date": "2025-11-16T21:25Z",
+      "homeTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 16,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "awayTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 23,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "33"
+      }
+    },
+    "401772778": {
+      "gameId": "401772778",
+      "week": 11,
+      "date": "2025-11-16T21:25Z",
+      "homeTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 22,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 19,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "12"
+      }
+    },
+    "401772819": {
+      "gameId": "401772819",
+      "week": 11,
+      "date": "2025-11-18T01:15Z",
+      "homeTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 16,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "awayTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 33,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "6"
+      }
+    },
+    "401772880": {
+      "gameId": "401772880",
+      "week": 11,
+      "date": "2025-11-16T18:00Z",
+      "homeTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 17,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 19,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "16"
+      }
+    },
+    "401772881": {
+      "gameId": "401772881",
+      "week": 11,
+      "date": "2025-11-16T18:00Z",
+      "homeTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 13,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "awayTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 16,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "34"
+      }
+    },
+    "401772882": {
+      "gameId": "401772882",
+      "week": 11,
+      "date": "2025-11-16T18:00Z",
+      "homeTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 27,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 30,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "1"
+      }
+    },
+    "401772883": {
+      "gameId": "401772883",
+      "week": 11,
+      "date": "2025-11-16T18:00Z",
+      "homeTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 20,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "awayTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 27,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "9"
+      }
+    },
+    "401772884": {
+      "gameId": "401772884",
+      "week": 11,
+      "date": "2025-11-16T21:05Z",
+      "homeTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 21,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "awayTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 19,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "14"
+      }
+    },
+    "401772885": {
+      "gameId": "401772885",
+      "week": 11,
+      "date": "2025-11-16T21:05Z",
+      "homeTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 22,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 41,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "25"
+      }
+    },
+    "401772928": {
+      "gameId": "401772928",
+      "week": 11,
+      "date": "2025-11-17T01:20Z",
+      "homeTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 16,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 9,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "21"
+      }
+    },
+    "401772945": {
+      "gameId": "401772945",
+      "week": 11,
+      "date": "2025-11-14T01:15Z",
+      "homeTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 27,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "awayTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 14,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 13,
+        "favoredTeam": "17"
+      }
+    }
+  },
+  "12": {
+    "401772779": {
+      "gameId": "401772779",
+      "week": 12,
+      "date": "2025-11-23T18:00Z",
+      "homeTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 23,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 20,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "12"
+      }
+    },
+    "401772780": {
+      "gameId": "401772780",
+      "week": 12,
+      "date": "2025-11-23T18:00Z",
+      "homeTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 31,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "awayTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 28,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "3"
+      }
+    },
+    "401772781": {
+      "gameId": "401772781",
+      "week": 12,
+      "date": "2025-11-23T18:00Z",
+      "homeTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 20,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 26,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "spread": {
+        "value": 6,
+        "favoredTeam": "17"
+      }
+    },
+    "401772782": {
+      "gameId": "401772782",
+      "week": 12,
+      "date": "2025-11-23T18:00Z",
+      "homeTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 23,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 10,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 13.5,
+        "favoredTeam": "33"
+      }
+    },
+    "401772783": {
+      "gameId": "401772783",
+      "week": 12,
+      "date": "2025-11-23T21:05Z",
+      "homeTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 24,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 27,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "spread": {
+        "value": 3,
+        "favoredTeam": "30"
+      }
+    },
+    "401772784": {
+      "gameId": "401772784",
+      "week": 12,
+      "date": "2025-11-23T21:05Z",
+      "homeTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 10,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "awayTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 24,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "spread": {
+        "value": 4,
+        "favoredTeam": "13"
+      }
+    },
+    "401772820": {
+      "gameId": "401772820",
+      "week": 12,
+      "date": "2025-11-25T01:15Z",
+      "homeTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 20,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "awayTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 9,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 7,
+        "favoredTeam": "25"
+      }
+    },
+    "401772886": {
+      "gameId": "401772886",
+      "week": 12,
+      "date": "2025-11-23T18:00Z",
+      "homeTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 24,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "awayTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 30,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "spread": {
+        "value": 12.5,
+        "favoredTeam": "26"
+      }
+    },
+    "401772887": {
+      "gameId": "401772887",
+      "week": 12,
+      "date": "2025-11-23T18:00Z",
+      "homeTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 23,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 6,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "spread": {
+        "value": 6,
+        "favoredTeam": "9"
+      }
+    },
+    "401772888": {
+      "gameId": "401772888",
+      "week": 12,
+      "date": "2025-11-23T18:00Z",
+      "homeTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 34,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 27,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "spread": {
+        "value": 10,
+        "favoredTeam": "8"
+      }
+    },
+    "401772889": {
+      "gameId": "401772889",
+      "week": 12,
+      "date": "2025-11-23T21:25Z",
+      "homeTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 10,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 24,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "18"
+      }
+    },
+    "401772890": {
+      "gameId": "401772890",
+      "week": 12,
+      "date": "2025-11-23T21:25Z",
+      "homeTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 24,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "awayTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 21,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "21"
+      }
+    },
+    "401772929": {
+      "gameId": "401772929",
+      "week": 12,
+      "date": "2025-11-24T01:20Z",
+      "homeTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 34,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "awayTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 7,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "spread": {
+        "value": 7,
+        "favoredTeam": "14"
+      }
+    },
+    "401772946": {
+      "gameId": "401772946",
+      "week": 12,
+      "date": "2025-11-21T01:15Z",
+      "homeTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 23,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "awayTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 19,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "2"
+      }
+    }
+  },
+  "13": {
+    "401772621": {
+      "gameId": "401772621",
+      "week": 13,
+      "date": "2025-11-28T20:00Z",
+      "homeTeam": {
+        "id": "21",
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "score": 15,
+        "color": "06424d",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 24,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "spread": {
+        "value": 7,
+        "favoredTeam": "21"
+      }
+    },
+    "401772694": {
+      "gameId": "401772694",
+      "week": 13,
+      "date": "2025-11-27T21:30Z",
+      "homeTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 31,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "awayTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 28,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 3,
+        "favoredTeam": "12"
+      }
+    },
+    "401772785": {
+      "gameId": "401772785",
+      "week": 13,
+      "date": "2025-11-30T18:00Z",
+      "homeTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 8,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "awayTeam": {
+        "id": "25",
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "score": 26,
+        "color": "aa0000",
+        "alternateColor": "b3995d"
+      },
+      "spread": {
+        "value": 6,
+        "favoredTeam": "25"
+      }
+    },
+    "401772786": {
+      "gameId": "401772786",
+      "week": 13,
+      "date": "2025-11-30T18:00Z",
+      "homeTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 3,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "awayTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 25,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "30"
+      }
+    },
+    "401772787": {
+      "gameId": "401772787",
+      "week": 13,
+      "date": "2025-11-30T18:00Z",
+      "homeTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 16,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 20,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "34"
+      }
+    },
+    "401772788": {
+      "gameId": "401772788",
+      "week": 13,
+      "date": "2025-11-30T21:25Z",
+      "homeTeam": {
+        "id": "24",
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "score": 31,
+        "color": "0080c6",
+        "alternateColor": "ffc20e"
+      },
+      "awayTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 14,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "spread": {
+        "value": 9.5,
+        "favoredTeam": "24"
+      }
+    },
+    "401772789": {
+      "gameId": "401772789",
+      "week": 13,
+      "date": "2025-11-30T21:25Z",
+      "homeTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 7,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 26,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "spread": {
+        "value": 4,
+        "favoredTeam": "2"
+      }
+    },
+    "401772821": {
+      "gameId": "401772821",
+      "week": 13,
+      "date": "2025-12-02T01:15Z",
+      "homeTeam": {
+        "id": "17",
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "score": 33,
+        "color": "002a5c",
+        "alternateColor": "c60c30"
+      },
+      "awayTeam": {
+        "id": "19",
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "score": 15,
+        "color": "003c7f",
+        "alternateColor": "c9243f"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "17"
+      }
+    },
+    "401772891": {
+      "gameId": "401772891",
+      "week": 13,
+      "date": "2025-11-27T18:00Z",
+      "homeTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 24,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "awayTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 31,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "8"
+      }
+    },
+    "401772892": {
+      "gameId": "401772892",
+      "week": 13,
+      "date": "2025-11-30T18:00Z",
+      "homeTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 21,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "awayTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 17,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 6,
+        "favoredTeam": "15"
+      }
+    },
+    "401772893": {
+      "gameId": "401772893",
+      "week": 13,
+      "date": "2025-11-30T18:00Z",
+      "homeTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 27,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 24,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "1"
+      }
+    },
+    "401772894": {
+      "gameId": "401772894",
+      "week": 13,
+      "date": "2025-11-30T18:00Z",
+      "homeTeam": {
+        "id": "29",
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "score": 31,
+        "color": "0085ca",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 28,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "spread": {
+        "value": 10,
+        "favoredTeam": "14"
+      }
+    },
+    "401772895": {
+      "gameId": "401772895",
+      "week": 13,
+      "date": "2025-11-30T18:00Z",
+      "homeTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 20,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "awayTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 17,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "27"
+      }
+    },
+    "401772896": {
+      "gameId": "401772896",
+      "week": 13,
+      "date": "2025-11-30T21:05Z",
+      "homeTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 26,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "awayTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 0,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "spread": {
+        "value": 8.5,
+        "favoredTeam": "26"
+      }
+    },
+    "401772930": {
+      "gameId": "401772930",
+      "week": 13,
+      "date": "2025-11-28T01:20Z",
+      "homeTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 14,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 32,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "33"
+      }
+    },
+    "401772931": {
+      "gameId": "401772931",
+      "week": 13,
+      "date": "2025-12-01T01:20Z",
+      "homeTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 26,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 27,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "7"
+      }
+    }
+  },
+  "14": {
+    "401772790": {
+      "gameId": "401772790",
+      "week": 14,
+      "date": "2025-12-07T18:00Z",
+      "homeTeam": {
+        "id": "20",
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "score": 10,
+        "color": "115740",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "15",
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "score": 34,
+        "color": "008e97",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "15"
+      }
+    },
+    "401772791": {
+      "gameId": "401772791",
+      "week": 14,
+      "date": "2025-12-07T18:00Z",
+      "homeTeam": {
+        "id": "33",
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "score": 22,
+        "color": "29126f",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "23",
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "score": 27,
+        "color": "000000",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 6,
+        "favoredTeam": "33"
+      }
+    },
+    "401772792": {
+      "gameId": "401772792",
+      "week": 14,
+      "date": "2025-12-07T18:00Z",
+      "homeTeam": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "score": 20,
+        "color": "bd1c36",
+        "alternateColor": "3e3a35"
+      },
+      "awayTeam": {
+        "id": "18",
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "score": 24,
+        "color": "d3bc8d",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 8.5,
+        "favoredTeam": "27"
+      }
+    },
+    "401772793": {
+      "gameId": "401772793",
+      "week": 14,
+      "date": "2025-12-07T18:00Z",
+      "homeTeam": {
+        "id": "30",
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "score": 36,
+        "color": "007487",
+        "alternateColor": "d7a22a"
+      },
+      "awayTeam": {
+        "id": "11",
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "score": 19,
+        "color": "003b75",
+        "alternateColor": "ffffff"
+      },
+      "spread": {
+        "value": 1.5,
+        "favoredTeam": "11"
+      }
+    },
+    "401772794": {
+      "gameId": "401772794",
+      "week": 14,
+      "date": "2025-12-07T21:05Z",
+      "homeTeam": {
+        "id": "13",
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "score": 17,
+        "color": "000000",
+        "alternateColor": "a5acaf"
+      },
+      "awayTeam": {
+        "id": "7",
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "score": 24,
+        "color": "0a2343",
+        "alternateColor": "fc4c02"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "7"
+      }
+    },
+    "401772897": {
+      "gameId": "401772897",
+      "week": 14,
+      "date": "2025-12-07T21:25Z",
+      "homeTeam": {
+        "id": "9",
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "score": 28,
+        "color": "204e32",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "3",
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "score": 21,
+        "color": "0b1c3a",
+        "alternateColor": "e64100"
+      },
+      "spread": {
+        "value": 6.5,
+        "favoredTeam": "9"
+      }
+    },
+    "401772898": {
+      "gameId": "401772898",
+      "week": 14,
+      "date": "2025-12-07T18:00Z",
+      "homeTeam": {
+        "id": "5",
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "score": 29,
+        "color": "472a08",
+        "alternateColor": "ff3c00"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "score": 31,
+        "color": "4b92db",
+        "alternateColor": "002a5c"
+      },
+      "spread": {
+        "value": 4.5,
+        "favoredTeam": "5"
+      }
+    },
+    "401772899": {
+      "gameId": "401772899",
+      "week": 14,
+      "date": "2025-12-07T18:00Z",
+      "homeTeam": {
+        "id": "16",
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "score": 31,
+        "color": "4f2683",
+        "alternateColor": "ffc62f"
+      },
+      "awayTeam": {
+        "id": "28",
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "score": 0,
+        "color": "5a1414",
+        "alternateColor": "ffb612"
+      },
+      "spread": {
+        "value": 2.5,
+        "favoredTeam": "16"
+      }
+    },
+    "401772900": {
+      "gameId": "401772900",
+      "week": 14,
+      "date": "2025-12-07T18:00Z",
+      "homeTeam": {
+        "id": "1",
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "score": 9,
+        "color": "a71930",
+        "alternateColor": "000000"
+      },
+      "awayTeam": {
+        "id": "26",
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "score": 37,
+        "color": "002a5c",
+        "alternateColor": "69be28"
+      },
+      "spread": {
+        "value": 7,
+        "favoredTeam": "26"
+      }
+    },
+    "401772901": {
+      "gameId": "401772901",
+      "week": 14,
+      "date": "2025-12-07T21:25Z",
+      "homeTeam": {
+        "id": "22",
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "score": 17,
+        "color": "a40227",
+        "alternateColor": "ffffff"
+      },
+      "awayTeam": {
+        "id": "14",
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "score": 45,
+        "color": "003594",
+        "alternateColor": "ffd100"
+      },
+      "spread": {
+        "value": 7.5,
+        "favoredTeam": "14"
+      }
+    },
+    "401772902": {
+      "gameId": "401772902",
+      "week": 14,
+      "date": "2025-12-07T18:00Z",
+      "homeTeam": {
+        "id": "2",
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "score": 39,
+        "color": "00338d",
+        "alternateColor": "d50a0a"
+      },
+      "awayTeam": {
+        "id": "4",
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "score": 34,
+        "color": "fb4f14",
+        "alternateColor": "000000"
+      },
+      "spread": {
+        "value": 5.5,
+        "favoredTeam": "2"
+      }
+    },
+    "401772932": {
+      "gameId": "401772932",
+      "week": 14,
+      "date": "2025-12-08T01:20Z",
+      "homeTeam": {
+        "id": "12",
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "score": 10,
+        "color": "e31837",
+        "alternateColor": "ffb612"
+      },
+      "awayTeam": {
+        "id": "34",
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "score": 20,
+        "color": "00143f",
+        "alternateColor": "c41230"
+      },
+      "spread": {
+        "value": 3.5,
+        "favoredTeam": "12"
+      }
+    },
+    "401772947": {
+      "gameId": "401772947",
+      "week": 14,
+      "date": "2025-12-05T01:15Z",
+      "homeTeam": {
+        "id": "8",
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "score": 44,
+        "color": "0076b6",
+        "alternateColor": "bbbbbb"
+      },
+      "awayTeam": {
+        "id": "6",
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "score": 30,
+        "color": "002a5c",
+        "alternateColor": "b0b7bc"
+      },
+      "spread": {
+        "value": 3,
+        "favoredTeam": "8"
+      }
+    }
+  }
+}
