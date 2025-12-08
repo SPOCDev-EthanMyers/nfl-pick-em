@@ -5,7 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "server": "node server/index.js",
-    "client": "cd client && cross-env PORT=3000 npm start",
+    "client": "cd client && cross-env PORT=3001 npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "install-all": "npm install && cd client && npm install"
   },

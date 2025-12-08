@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './GameList.css';
+import EnhancedAnalyticsModal from './EnhancedAnalyticsModal';
+import BacktestModal from './BacktestModal';
 
-function GameList({ games, spreads }) {
+function GameList({ games, spreads, currentWeek }) {
+  const [selectedGame, setSelectedGame] = useState(null);
+  const [modalType, setModalType] = useState('analytics'); // 'analytics' or 'backtest'
+
   // Helper function to calculate spread coverage
   const calculateSpreadResult = (game, spread) => {
     if (!spread) {
@@ -60,6 +65,23 @@ function GameList({ games, spreads }) {
     return { coveredTeam, displaySpread, isPush };
   };
 
+  const handleGameClick = (game) => {
+    const gameWithSpread = {
+      ...game,
+      spread: spreads[game.id]
+    };
+    setSelectedGame(gameWithSpread);
+
+    // Determine modal type based on game status
+    const isGameComplete = game.status === 'Final' || game.status === 'Final/OT';
+    setModalType(isGameComplete ? 'backtest' : 'analytics');
+  };
+
+  const handleCloseModal = () => {
+    setSelectedGame(null);
+    setModalType('analytics');
+  };
+
   return (
     <div className="game-list">
       <div className="game-list-header">
@@ -78,8 +100,13 @@ function GameList({ games, spreads }) {
             : { coveredTeam: null, displaySpread: null, isPush: false };
 
           return (
-            <div key={game.id} className="game-wrapper">
-              <div className="game-card">
+            <div key={game.id} className="game-wrapper analytics-clickable" data-game-id={game.id}>
+              <div className="analytics-overlay">
+                <div className="analytics-text">
+                  <span>Analyze</span>
+                </div>
+              </div>
+              <div className="game-card" onClick={() => handleGameClick(game)}>
                 {/* Away Team */}
                 <div
                   className={`team-block ${
@@ -144,6 +171,22 @@ function GameList({ games, spreads }) {
           );
         })}
       </div>
+
+      {selectedGame && modalType === 'analytics' && (
+        <EnhancedAnalyticsModal
+          game={selectedGame}
+          week={currentWeek || 1}
+          onClose={handleCloseModal}
+        />
+      )}
+
+      {selectedGame && modalType === 'backtest' && (
+        <BacktestModal
+          game={selectedGame}
+          week={currentWeek || 1}
+          onClose={handleCloseModal}
+        />
+      )}
     </div>
   );
 }
