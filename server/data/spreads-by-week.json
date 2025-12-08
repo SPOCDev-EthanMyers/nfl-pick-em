@@ -858,5 +858,71 @@
       "spread": 3,
       "favoredTeam": "8"
     }
+  },
+  "15": {
+    "401772795": {
+      "spread": 1.5,
+      "favoredTeam": "2"
+    },
+    "401772796": {
+      "spread": 1.5,
+      "favoredTeam": "33"
+    },
+    "401772797": {
+      "spread": 12.5,
+      "favoredTeam": "30"
+    },
+    "401772798": {
+      "spread": 4.5,
+      "favoredTeam": "12"
+    },
+    "401772799": {
+      "spread": 11.5,
+      "favoredTeam": "26"
+    },
+    "401772800": {
+      "spread": 1.5,
+      "favoredTeam": "9"
+    },
+    "401772823": {
+      "spread": 3,
+      "favoredTeam": "23"
+    },
+    "401772903": {
+      "spread": 9.5,
+      "favoredTeam": "34"
+    },
+    "401772904": {
+      "spread": 7.5,
+      "favoredTeam": "3"
+    },
+    "401772905": {
+      "spread": 2.5,
+      "favoredTeam": "19"
+    },
+    "401772906": {
+      "spread": 12.5,
+      "favoredTeam": "21"
+    },
+    "401772907": {
+      "spread": 12.5,
+      "favoredTeam": "25"
+    },
+    "401772908": {
+      "spread": 3,
+      "favoredTeam": "29"
+    },
+    "401772909": {
+      "spread": 5.5,
+      "favoredTeam": "14"
+    },
+    "401772933": {
+      "spread": 6,
+      "favoredTeam": "6"
+    },
+    "401772948": {
+      "spread": 4.5,
+      "favoredTeam": "27"
+    }
   }
 }

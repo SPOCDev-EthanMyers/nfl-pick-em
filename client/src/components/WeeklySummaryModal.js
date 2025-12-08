@@ -210,6 +210,7 @@ function aggregateMetrics(gameData, metricPerformance) {
 function GameCard({ gameData, rank, onGameClick }) {
   const { type, game, analysis, winner, loser, metricsSupporting, strength } = gameData;
   const isUpcoming = type === 'upcoming';
+  console.log("Game card data", gameData);
 
   return (
     <div

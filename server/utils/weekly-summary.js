@@ -211,7 +211,7 @@ async function generateWeeklySummary(week, allGameResults, teamAnalytics, spread
 
   // Process each game
   for (const [gameId, game] of Object.entries(allWeekGames)) {
-    const isComplete = game.homeTeam.score !== undefined && game.awayTeam.score !== undefined && game.status !== 'pre';
+    const isComplete = game.status !== 'pre';
 
     if (isComplete) {
       // Backtest completed game
