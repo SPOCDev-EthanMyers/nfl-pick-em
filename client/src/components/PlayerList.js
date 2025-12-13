@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './PlayerList.css';
 
 function PlayerList({ games, players, spreads, onSelectionToggle }) {
+  // Track previous player selections for highlighting changes
+  const [prevSelections, setPrevSelections] = useState({});
+  const [recentChanges, setRecentChanges] = useState({});
+
+  // Detect changes when players update their selections
+  useEffect(() => {
+    const changes = {};
+
+    players.forEach(player => {
+      const prevPlayer = prevSelections[player.name];
+      if (prevPlayer) {
+        Object.keys(player.selections || {}).forEach(gameId => {
+          if (player.selections[gameId] !== prevPlayer.selections?.[gameId]) {
+            changes[`${player.name}-${gameId}`] = true;
+          }
+        });
+      }
+    });
+
+    setRecentChanges(changes);
+    setPrevSelections(
+      players.reduce((acc, p) => ({ ...acc, [p.name]: p }), {})
+    );
+
+    // Clear highlights after 5 seconds
+    if (Object.keys(changes).length > 0) {
+      setTimeout(() => setRecentChanges({}), 5000);
+    }
+  }, [players]);
+
   // Helper function to get team for selection
   const getSelectedTeam = (game, teamId) => {
     if (!teamId) return null;
@@ -136,7 +166,7 @@ function PlayerList({ games, players, spreads, onSelectionToggle }) {
                             {game.awayTeam.abbreviation} @ {game.homeTeam.abbreviation}
                           </div>
                           <div
-                            className={`selection-cell ${selectedTeam ? 'has-selection' : 'no-selection'} ${isWinner ? 'winner' : ''} ${isLoser ? 'loser' : ''} ${isPush ? 'push' : ''}`}
+                            className={`selection-cell ${selectedTeam ? 'has-selection' : 'no-selection'} ${isWinner ? 'winner' : ''} ${isLoser ? 'loser' : ''} ${isPush ? 'push' : ''} ${recentChanges[`${player.name}-${game.id}`] ? 'recently-changed' : ''}`}
                             onClick={() => onSelectionToggle(player.name, game.id, selection)}
                             style={
                               selectedTeam

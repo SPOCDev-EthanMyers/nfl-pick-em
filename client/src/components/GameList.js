@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './GameList.css';
 import EnhancedAnalyticsModal from './EnhancedAnalyticsModal';
 import BacktestModal from './BacktestModal';
@@ -6,6 +6,30 @@ import BacktestModal from './BacktestModal';
 function GameList({ games, spreads, currentWeek }) {
   const [selectedGame, setSelectedGame] = useState(null);
   const [modalType, setModalType] = useState('analytics'); // 'analytics' or 'backtest'
+
+  // Track previous spreads and changed games for highlighting
+  const [prevSpreads, setPrevSpreads] = useState({});
+  const [changedGames, setChangedGames] = useState(new Set());
+
+  // Detect changes when spreads update
+  useEffect(() => {
+    const changed = new Set();
+
+    Object.keys(spreads).forEach(gameId => {
+      if (prevSpreads[gameId] &&
+          spreads[gameId]?.spread !== prevSpreads[gameId]?.spread) {
+        changed.add(gameId);
+      }
+    });
+
+    setChangedGames(changed);
+    setPrevSpreads(spreads);
+
+    // Clear highlights after 3 seconds
+    if (changed.size > 0) {
+      setTimeout(() => setChangedGames(new Set()), 3000);
+    }
+  }, [spreads]);
 
   // Helper function to calculate spread coverage
   const calculateSpreadResult = (game, spread) => {
@@ -106,7 +130,10 @@ function GameList({ games, spreads, currentWeek }) {
                   <span>Analyze</span>
                 </div>
               </div>
-              <div className="game-card" onClick={() => handleGameClick(game)}>
+              <div
+                className={`game-card ${changedGames.has(game.id) ? 'highlight-change' : ''}`}
+                onClick={() => handleGameClick(game)}
+              >
                 {/* Away Team */}
                 <div
                   className={`team-block ${

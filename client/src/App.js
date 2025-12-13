@@ -18,6 +18,10 @@ function App() {
   const [showAdmin, setShowAdmin] = useState(false);
   const [showSummary, setShowSummary] = useState(false);
 
+  // Real-time polling state
+  const [isPolling, setIsPolling] = useState(true);
+  const [lastUpdate, setLastUpdate] = useState(new Date());
+
   // Fetch weeks on component mount
   useEffect(() => {
     fetchWeeks();
@@ -29,6 +33,43 @@ function App() {
       fetchWeekData(currentWeek);
     }
   }, [currentWeek, weeks.length]);
+
+  // Smart polling - determine if we should poll aggressively
+  const shouldPollAggressively = () => {
+    if (!games || games.length === 0) return false;
+
+    const now = new Date();
+    const dayOfWeek = now.getDay(); // 0=Sun, 4=Thu, 1=Mon
+
+    // Check if any games are currently in progress
+    const hasLiveGames = games.some(game => {
+      return game.status?.type?.state === 'in' ||
+             game.status?.type?.state === 'pre';
+    });
+
+    // Poll aggressively if:
+    // 1. Games are live, OR
+    // 2. It's a game day (Thu=4, Fri=5, Sat=6, Sun=0, Mon=1)
+    const isGameDay = [0, 1, 4, 5, 6].includes(dayOfWeek);
+
+    return hasLiveGames || isGameDay;
+  };
+
+  // Auto-refresh polling effect
+  useEffect(() => {
+    if (!isPolling || !currentWeek) return;
+
+    // Use aggressive polling (30s) or relaxed polling (2 min)
+    const interval = shouldPollAggressively() ? 30000 : 120000;
+
+    const intervalId = setInterval(() => {
+      fetchWeekData(currentWeek, true); // Silent fetch
+      setLastUpdate(new Date());
+    }, interval);
+
+    // Cleanup interval on unmount or when polling disabled
+    return () => clearInterval(intervalId);
+  }, [isPolling, currentWeek, games]);
 
   const fetchWeeks = async () => {
     try {
@@ -47,8 +88,8 @@ function App() {
     }
   };
 
-  const fetchWeekData = async (week) => {
-    setLoading(true);
+  const fetchWeekData = async (week, silent = false) => {
+    if (!silent) setLoading(true);
     try {
       const [gamesRes, spreadsRes, playersRes] = await Promise.all([
         axios.get(`/api/games?week=${week}`),
@@ -61,9 +102,9 @@ function App() {
       setPlayers(playersRes.data);
     } catch (error) {
       console.error('Error fetching week data:', error);
-      alert('Failed to load data for week ' + week);
+      if (!silent) alert('Failed to load data for week ' + week);
     } finally {
-      setLoading(false);
+      if (!silent) setLoading(false);
     }
   };
 
@@ -196,6 +237,37 @@ function App() {
           </div>
         </div>
       </header>
+
+      {/* Refresh Controls */}
+      <div className="refresh-controls">
+        <div className="refresh-status">
+          <span className={`status-indicator ${isPolling ? 'active' : 'inactive'}`}></span>
+          <span>
+            {isPolling ? 'Auto-refreshing' : 'Paused'}
+            {' • Last update: '}
+            {lastUpdate.toLocaleTimeString()}
+          </span>
+        </div>
+
+        <div className="refresh-actions">
+          <button
+            onClick={() => setIsPolling(!isPolling)}
+            className="toggle-polling-btn"
+          >
+            {isPolling ? 'Pause' : 'Resume'} Auto-Refresh
+          </button>
+
+          <button
+            onClick={() => {
+              fetchWeekData(currentWeek);
+              setLastUpdate(new Date());
+            }}
+            className="manual-refresh-btn"
+          >
+            ↻ Refresh Now
+          </button>
+        </div>
+      </div>
 
       {/* Admin Panel */}
       {showAdmin && (
