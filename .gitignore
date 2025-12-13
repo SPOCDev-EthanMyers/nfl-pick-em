@@ -3,9 +3,14 @@
 # Ignore node_modules directory
 node_modules/
 # Ignore all .env files
-env
+.env
+.env.local
+.env.production
 # Ignore specific file
 config/settings.json
 # Ignore all files in a directory except one
 temp/*
 !temp/important.txt
+# Ignore build directory
+client/build/
+build/
