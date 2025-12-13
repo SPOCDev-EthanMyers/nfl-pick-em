@@ -441,6 +441,36 @@
 }
 
 /* Responsive */
+/* Mobile-first: Full-screen modal below 768px */
+@media (max-width: 767px) {
+  .summary-modal {
+    width: 95vw;
+    max-width: 95vw;
+    height: 90vh;
+    max-height: 90vh;
+    margin: 5vh auto;
+  }
+
+  .summary-header {
+    padding: 15px;
+  }
+
+  .summary-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .summary-content {
+    padding: 15px;
+    overflow-y: auto;
+  }
+
+  .close-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .summary-modal {
     width: 95vw;

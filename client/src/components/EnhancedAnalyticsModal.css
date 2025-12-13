@@ -680,6 +680,37 @@
 }
 
 /* Responsive */
+/* Mobile-first: Full-screen modal below 768px */
+@media (max-width: 767px) {
+  .enhanced-modal {
+    width: 95vw;
+    max-width: 95vw;
+    height: 90vh;
+    max-height: 90vh;
+    margin: 5vh auto;
+    padding: 15px;
+    overflow-y: auto;
+  }
+
+  .enhanced-header {
+    padding: 15px;
+  }
+
+  .header-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .enhanced-content {
+    padding: 15px;
+  }
+
+  .modal-close {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .stats-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

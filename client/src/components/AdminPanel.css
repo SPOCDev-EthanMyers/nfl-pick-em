@@ -296,6 +296,34 @@
   font-weight: 600;
 }
 
+/* Mobile optimizations below 768px */
+@media (max-width: 767px) {
+  .admin-panel {
+    padding: 12px;
+  }
+
+  .admin-section {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .spreads-section {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .spread-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .spread-row input,
+  .spread-row select,
+  .spread-row button {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .admin-panel {
     margin: 10px;
