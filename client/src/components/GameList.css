@@ -225,48 +225,6 @@
   font-weight: 600;
 }
 
-/* Mobile-first: Vertical stacking below 768px */
-@media (max-width: 767px) {
-  .games-container {
-    flex-direction: column;
-    overflow-x: visible;
-    padding: 10px;
-    gap: 12px;
-  }
-
-  .game-wrapper {
-    min-width: 100%;
-    max-width: 100%;
-    flex-shrink: 1;
-    padding: 12px;
-  }
-
-  .game-card {
-    flex-direction: column;
-  }
-
-  .team-block {
-    width: 100%;
-    padding: 10px;
-    min-height: 50px;
-  }
-
-  .spread-display {
-    width: 100%;
-    padding: 8px 0;
-    text-align: center;
-  }
-
-  .team-abbr {
-    font-size: 1.1rem;
-  }
-
-  .game-info {
-    padding: 8px;
-    text-align: center;
-  }
-}
-
 @media (max-width: 768px) {
   .game-list-header {
     padding: 15px;

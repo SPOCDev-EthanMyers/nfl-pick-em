@@ -141,31 +141,3 @@
   color: #a0d468;
   opacity: 0.8;
 }
-
-/* Mobile optimization below 768px */
-@media (max-width: 767px) {
-  .week-selector {
-    width: 100%;
-  }
-
-  .week-display {
-    width: 100%;
-    justify-content: center;
-    padding: 12px;
-  }
-
-  .week-dropdown {
-    width: 100%;
-    left: 0;
-    right: 0;
-    min-width: 100%;
-  }
-
-  .week-label {
-    font-size: 12px;
-  }
-
-  .week-number {
-    font-size: 28px;
-  }
-}
