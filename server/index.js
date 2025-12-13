@@ -5,11 +5,16 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Serve static files from React app in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
 
 // Data file paths
 const DATA_DIR = path.join(__dirname, 'data');
@@ -602,6 +607,13 @@ app.get('/api/summary/week/:week', async (req, res) => {
     res.status(500).json({ error: 'Failed to generate weekly summary' });
   }
 });
+
+// Catch-all handler: serve React app for any route not handled by API
+if (process.env.NODE_ENV === 'production') {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  });
+}
 
 // Start server
 app.listen(PORT, () => {
